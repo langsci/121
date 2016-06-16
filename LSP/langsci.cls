@@ -1332,7 +1332,7 @@ is, or will remain, accurate or appropriate.
 	\onlyAuthor
 	\renewcommand{\newlineCover}{}
 	\renewcommand{\newlineSpine}{} 
-	\edef\lsCollectionTitle{\@title}		% \edef immediately expands \@title
+	\edef\lsCollectionTitle{{\@title}}		% \edef immediately expands \@title
 	\edef\lsCollectionEditor{\@author}
 	\addbibresource{collection_tmp.bib}
 	\newwrite\tempfile						% open temporary bib file
@@ -1398,7 +1398,7 @@ is, or will remain, accurate or appropriate.
 	\StrSubstitute{\editorTemp}{\&}{ and }[\editorTemp]
 
 	%% write bib entry to file
-	\immediate\write\tempfile{@incollection{#1,author={\authorTemp},title={\@title},booktitle={\lsCollectionTitle},editor={\editorTemp},publisher={Language Science Press},Address={Berlin},year=\the\year,pages={\lsCollectionPaperFirstPage --\lsCollectionPaperLastPage},options={skipbib=true}}}
+	\immediate\write\tempfile{@incollection{#1,author={\authorTemp},title={{\@title}},booktitle={{\lsCollectionTitle}},editor={\editorTemp},publisher={Language Science Press},Address={Berlin},year=\the\year,pages={\lsCollectionPaperFirstPage --\lsCollectionPaperLastPage},options={skipbib=true}}}
 
 	%\printbibliography[heading=subbibliography,notkeyword=this]  
 	\end{refsection}
