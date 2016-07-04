@@ -188,10 +188,10 @@ I carried out a similar analysis on the set of 446 Lopit nouns and tested the ca
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/moodie-fig-1.png}
-\caption{Number marking across semantic domains\todo[inline]{Please provide the raw data for this graph. From the image, I think it is: mammal: 40,6,2(?),bird: 23, 2, 1,reptile: 11,2,0,insect: 10,5,9,trees: 3,4,0,vegetation: 2,1,10,tool: 16,3,3}}
+\caption{Number marking across semantic domains}
 \label{fig:moodie:1}
 \end{figure}
-
+\todo[inline]{Please provide the raw data for this graph. From the image, I think it is: mammal: 40,6,2(?),bird: 23, 2, 1,reptile: 11,2,0,insect: 10,5,9,trees: 3,4,0,vegetation: 2,1,10,tool: 16,3,3}
 For most semantic categories tested, the preferred number marking pattern was clear. However, it was not so clear for the insects and the data was examined in more detail. The examples of insects are listed in \tabref{tab:moodie:7}. Those insects which tend to be larger and more likely to be seen individually, such as butterflies, caterpillars and large wasps, take the plurative system. Conversely, those insects which are smaller and/or seen in large numbers such as mosquitoes, lice and flies have the singulative system. Whilst not conclusive, this data tends to support the role of individuation in determining the choice between singulative and plurative patterns for number markings.
 
 \begin{table}
@@ -217,6 +217,13 @@ The number pattern for the terms for body parts was also investigated. The terms
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figures/moodie-fig-2.png}
+\begin{tikzpicture}[trim axis left, trim axis right]
+\begin{axis}[ybar=0pt, ylabel={Number of occurences in lexicon}, xlabel={Numbering pattern},symbolic x coords={single, pairs or groups}, xtick=data, xtick align=center, bar width=2em, ymin=0, nodes near coords, nodes near coords align=vertical, xlabel near ticks, ymajorgrids, area legend, enlarge y limits={abs=2, upper}, enlarge x limits=0.5, legend entries={plurative,replacement,singuative}, legend style={cells={anchor=east}, legend pos=south east}]
+\addplot[pattern=dots] coordinates {(single,10)(pairs or groups,10)};
+\addplot[pattern=crosshatch] coordinates {(single,4)(pairs or groups,7)};
+\addplot[pattern=horizontal lines] coordinates {(single,0)(pairs or groups,9)};
+\end{axis}
+\end{tikzpicture}
 \caption{The numbering patterns for body parts}
 \label{fig:moodie:2}
 \end{figure}
