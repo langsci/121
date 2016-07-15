@@ -15,11 +15,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec fermentum ri
 \begin{document}
 
 \section{Introduction} 
-\newcommand{\tabme}[4]{%
+\newcommand{\tabme}[5][4cm]{%
   \begin{tabbing}
-    \hspace{4cm} \= \hspace{4cm} \kill
-    #1	\>		#2 \\
-    #3	\>		#4 \\
+    \hspace{#1} \= \hspace{#1} \kill
+    #2	\>		#3 \\
+    #4	\>		#5 \\
   \end{tabbing}
 }
 
@@ -31,11 +31,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec fermentum ri
 \ex
 \tabme{pang-a}{pang-u-a }{‘arrange’}{‘disarrange’}
 \ex
-\tabme{fung-a}{fung-u-a}{‘shut’ }{‘open’}
+\tabme{fung-a}{fung-u-a}{‘shut’ }{‘open’} 
+\ex
+\tabme{chom-a}{chom-o-a}{‘stab’}{‘pull out’}
 \z
 \z
  
-
+\ea
+\ea 
+\tabme[2cm]{zib-u-a}{zib-ul-i-a}{‘unplug’}{‘unplug with/for’}
+\ex
+\tabme[5cm]{teg-u-a}{teg-ul-i-a}{‘disassemble a trap’}{‘disassemble a trap with/for/on’}
+\ex
+\tabme[4cm]{pang-u-a}{pang-ul-i-a}{‘disarrange’}{‘disarrange with/for/on’}
+\ex
+\tabme[5cm]{chom-o-a}{chom-ol-e-a}{‘draw out’}{‘draw out with/for/on’}
+\ex
+\tabme[3cm]{fung-u-a}{fung-ul-i-a}{‘open’}{‘open with/for/on’}
+\z
+\z
 
 
 \section*{Abbreviations}
