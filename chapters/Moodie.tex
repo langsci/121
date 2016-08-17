@@ -187,8 +187,15 @@ The distinction between singulative and plurative has been examined in some deta
 I carried out a similar analysis on the set of 446 Lopit nouns and tested the categories of mammal, bird, reptile, insect, tree, vegetation and tool. The results are shown in \figref{fig:moodie:1}. The resulting trends were somewhat similar to those found by Grimm for the same categories. 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/moodie-fig-1.png}
+% \includegraphics[width=\textwidth]{figures/moodie-fig-1.png}
 \caption{Number marking across semantic domains}
+\begin{tikzpicture}
+\begin{axis}[width=\textwidth, ybar=0pt, ylabel={Number of occurences in lexicon}, xlabel={Semantic groups},symbolic x coords={mammal, bird, reptile, insect, trees, vegetation, tool}, xtick=data, xtick align=center, bar width=1em, ymin=0, nodes near coords, nodes near coords align={vertical}, xlabel near ticks, ymajorgrids, area legend, enlarge y limits={abs=2, upper}, enlarge x limits=.1, legend entries={plurative,replacement,singuative}, legend style={cells={anchor=west}, legend pos=north east}]
+\addplot[pattern=dots] coordinates {(mammal,40)(bird,23)(reptile,11)(insect,10)(trees,3)(vegetation,2)(tool,16)};
+\addplot[pattern=crosshatch] coordinates {(mammal,6)(bird,2)(reptile,2)(insect,5)(trees,4)(vegetation,1)(tool,2)};
+\addplot[pattern=horizontal lines] coordinates {(mammal,2)(bird,1)(reptile,0)(insect,9)(trees,0)(vegetation,10)(tool,2)};
+\end{axis}
+\end{tikzpicture}
 \label{fig:moodie:1}
 \end{figure}
 
@@ -216,8 +223,15 @@ For most semantic categories tested, the preferred number marking pattern was cl
 The number pattern for the terms for body parts was also investigated. The terms were grouped into those parts which are found singly (‘face’, ‘tongue’, ‘head’) and those which are found in pairs or sets (‘eyes’, ‘fingers’, ‘hands’). The results are shown in \figref{fig:moodie:2} and these also resemble the findings of Grimm.  That is, body parts which occur singly are more likely to have the plurative pattern and those parts found in pairs or sets are more likely to have the singulative pattern. 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/moodie-fig-2.png}
+% \includegraphics[width=\textwidth]{figures/moodie-fig-2.png}
 \caption{The numbering patterns for body parts}
+\begin{tikzpicture}[trim axis left, trim axis right]
+\begin{axis}[ybar=0pt, ylabel={Number of occurences in lexicon}, xlabel={Numbering pattern},symbolic x coords={single, pairs or groups}, xtick=data, xtick align=center, bar width=2em, ymin=0, nodes near coords, nodes near coords align=vertical, xlabel near ticks, ymajorgrids, area legend, enlarge y limits={abs=2, upper}, enlarge x limits=0.5, legend entries={plurative,replacement,singuative}, legend style={cells={anchor=west}, legend pos=south east}]
+\addplot[pattern=dots] coordinates {(single,10)(pairs or groups,10)};
+\addplot[pattern=crosshatch] coordinates {(single,4)(pairs or groups,7)};
+\addplot[pattern=horizontal lines] coordinates {(single,0)(pairs or groups,9)};
+\end{axis}
+\end{tikzpicture}
 \label{fig:moodie:2}
 \end{figure}
 
