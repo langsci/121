@@ -352,32 +352,76 @@ I will leave these explanations for future work and offer here only some prelimi
 Whether we fully specify eL-toned pronouns as [-upper, -raised] or underspecify them as [-raised] alone, alternations with these pronouns follow straightforwardly from the spread of the [-raised] feature:
 
 \ea\label{ex:mcpherson:22} {\it Example of [-raised] spreading} \\
-\includegraphics[scale=.5]{figures/Lspread2.eps} \\
-`hit him!' \\
+% \includegraphics[scale=.5]{figures/Lspread2.eps} \\
+\begin{tikzpicture}
+\node at (0,0) (-upper) {\strut [-upper]};
+\node [below=\baselineskip of -upper] (a) {\strut a};
+\node [below=\baselineskip of a] (-raised) {\strut [-raised]};
+\node [right= of -upper] (+upper) {\strut [+upper]};
+\node [below=\baselineskip of +upper] (ba) {\strut b\~{a}};
+\node [below=\baselineskip of ba] (+raised) {\strut\st{[+raised]}};
+\draw (-upper) -- (a) -- (-raised);
+\draw (+upper) -- (ba) -- (+raised);
+\draw [dashed] (ba.south) -- (-raised.north);
+\node [below=.5\baselineskip of -raised] (hit) {\strut `hit}; \node [below=.5\baselineskip of +raised] (him) {\strut him!'};
+\end{tikzpicture}
 \z
+\todo[inline] {I aligned the translation with the example figure. OK?}
 
 The pronoun and the verb here are linked with the feature [-raised], which causes the verb to lower from eH to H. 
 
 H-toned pronouns are trickier, since they neither consistently raise nor consistently lower the head. However, I argue that these alternations, too, can be understood as a preference for spreading [-raised] of [+upper, -raised] combined with an OCP effect against adjacent H tones. When a H-toned pronoun precedes an eH head, [-raised] spreads. However, this creates a sequence of two H tones; to resolve this sequence, [+upper] on the head dissimilates to [-upper], yielding an eL tone:
 
 \ea\label{ex:mcpherson:23} {\it Example of [-raised] spreading from H to eH} \\
-\includegraphics[scale=.55]{figures/MspreadH.eps} \\
-`hit me!' \\
+% \includegraphics[scale=.55]{figures/MspreadH.eps} \\
+\begin{tikzpicture}
+\node at (0,0) (-upper) {\strut [+upper]};
+\node [below=\baselineskip of -upper] (mo) {\strut mo};
+\node [below=\baselineskip of mo] (-raised) {\strut [-raised]};
+\node [right= of -upper] (+upper) {\strut\st{[+upper]}}; \node [right= of +upper] (-upp) {\strut [-upper]}; \draw[->,thick] (+upper) -- (-upp);
+\node [below=\baselineskip of +upper] (ba) {\strut b\~{a}};
+\node [below=\baselineskip of ba] (+raised) {\strut\st{[+raised]}};
+\draw (-upper) -- (mo) -- (-raised);
+\draw (+upper) -- (ba) -- (+raised);
+\draw [dashed] (ba.south) -- (-raised.north);
+\node [below=.5\baselineskip of -raised] (hit) {\strut `hit}; \node [below=.5\baselineskip of +raised] (me) {\strut me!'};
+\end{tikzpicture}
 \z
+\todo[inline]{this example has changed. Do you approve?}
 
 With an underlyingly H-toned head, the OCP restriction comes into effect right away, triggering the same repair of dissimilating [+upper] to [-upper]. This results in an eL tone once again:
 
 \ea\label{ex:mcpherson:24} {\it Example of [+upper] dissimilating in a sequence of two Hs} \\
-\includegraphics[scale=.6]{figures/MspreadM.eps} \\
-`sell me!' \\
+% \includegraphics[scale=.6]{figures/MspreadM.eps} \\
+\begin{tikzpicture}
+\node at (0,0) (-upper) {\strut [+upper]};
+\node [below=\baselineskip of -upper] (mo) {\strut mo};
+\node [below=\baselineskip of mo] (-raised) {\strut [-raised]};
+\node [right= of -upper] (+upper) {\strut\st{[+upper]}}; \node [right= of +upper] (-upp) {\strut [-upper]}; \draw[->,thick] (+upper) -- (-upp);
+\node [below=\baselineskip of +upper] (ba) {\strut sɔ\textlengthmark};
+\node [below=\baselineskip of ba] (+raised) {\strut [-raised]};
+\draw (-upper) -- (mo) -- (-raised);
+\draw (+upper) -- (ba) -- (+raised);
+\node [below=.5\baselineskip of -raised] (sell) {\strut `sell}; \node [below=.5\baselineskip of +raised] (me) {\strut me!'};
+\end{tikzpicture}
 \z
 
 Taking H to be a middle tone in Seenku, this kind of M-tone dissimilation has support in other African languages, such as Leggbo \citep{Paster03}. Alternatively, the dissimilation could be driven by an OCP constraint (e.g.\ \citealt{McCarthy86}) on [+upper] rather than on the sequence of two Hs specifically. However, a similar dissimilation pattern is arguably at work with eL-toned heads. Here, rather than spreading [-raised] onto a tone already designated as [-raised], the non-homophonous [+upper] spreads instead. This creates once again a sequence of two H tones, and here it is [-raised] that dissimilates on the head to [+raised], creating an eH tone:
 
 \ea\label{ex:mcpherson:25} {\it example of [+upper] spreading from H to eL} \\
-\includegraphics[scale=.58]{figures/MspreadL.eps} \\
-`buy me!' \\
-\z
+% \includegraphics[scale=.58]{figures/MspreadL.eps} \\
+\begin{tikzpicture}
+\node at (0,0) (-upper) {\strut [+upper]};
+\node [below=\baselineskip of -upper] (mo) {\strut mo};
+\node [below=\baselineskip of mo] (-raised) {\strut [-raised]};
+\node [right= of -upper] (+upper) {\strut\st{[-upper]}};
+\node [below=\baselineskip of +upper] (ba) {\strut s\~{a}};
+\node [below=\baselineskip of ba] (+raised) {\strut\st{[-raised]}}; \node [right= of +raised] (+rais) {\strut [+raised]}; \draw[->,thick] (+raised) -- (+rais);
+\draw (-upper) -- (mo) -- (-raised);
+\draw (+upper) -- (ba) -- (+raised);
+\draw [dashed] (-upper.south) -- (ba.north);
+\node [below=.5\baselineskip of -raised] (buy) {\strut `buy}; \node [below=.5\baselineskip of +raised] (me) {\strut me!'};
+\end{tikzpicture}\z
 
 These results can be unified by the following informally conceived constraints: 1. The argument and the head should be linked tonally, preferably by [-raised]. 2. This linking should be of a non-homophonous tonal feature. 3. Two H tones may not follow one another (or, there is an OCP constraint on [+upper] and [-raised]). 
 
