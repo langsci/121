@@ -839,8 +839,8 @@
 \newcommand{\lsCoverTitleAuthor}{
   \renewcommand{\and}{\\}
   \renewcommand{\lastand}{\\}
-  \renewcommand{\newlineCover}{\\}
-  \renewcommand{\newlineSpine}{}
+  \renewcommand{\newlineCover}{}
+%   \renewcommand{\newlineSpine}{}
   \lsCoverBlock
 
   \begin{textblock}{140}(15,17.5)
@@ -1653,7 +1653,7 @@ is, or will remain, accurate or appropriate.
   \renewcommand{\newlineTOC}{}
   \renewcommand{\newlineCover}{\\}
   \iflsCollectionChapter
-    \vspace*{-2\baselineskip} 
+%     \vspace*{-2\baselineskip} 
     {\LARGE Chapter \thechapter}\newline\newline\fi
   \@title}}
   
