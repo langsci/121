@@ -6,7 +6,7 @@ Laura McPherson \affiliation{Dartmouth College}
 % \chapterDOI{} %will be filled in at production
 
 
-\abstract{
+\abstract{%
 Recently, authors such as \citet{Hyman10b} and \citet{Clementsetal10} have argued that African tone is better modeled with tonal primitives (e.g.\ H, M, L) than with tonal features. This paper reopens the question with novel data from Seenku, a four-tone Mande language of Burkina Faso (eL, L, H, eH). I argue that the features [$\pm$upper, $\pm$raised] provide a unified analysis of several tonal phenomena, including plural formation, tonal neutralizations, and verbal alternations. First, I argue that plural formation is a case of featural affixation, with a plural suffix [+raised] deriving [-upper,+raised] L from singular eL, while underlying [+upper,-raised] H shifts to eH. In terms of tonotactics, the two middle tones are treated differently in nouns: [+upper,-raised] is not allowed word-finally and is always followed by eL, while derived [-upper,+raised] is allowed. Further evidence for tone features is found in the verbal domain. First, the distinction between eH and H in verbs is often neutralized, to eH for transitive verbs and H for intransitive verbs. I analyze these neutralizations as default [+raised] assignment to underlying [+upper] verbs in the transitive and [-raised] assignment in the intransitive. In the perfective, eH-toned transitive verbs are realized as H while eL-toned verbs remain unchanged. A featural account derives this result with the affixation of perfective [-raised]. Finally, complicated argument-head tonal alternations may be more naturally explained under a featural approach. In sum, this paper presents a case where tonal features show an analytic advantage over tonal primitives, suggesting that the debate is not yet over.
 }
 
@@ -174,7 +174,7 @@ In sum, plural formation provides evidence for all four tone levels in Seenku, m
 The next piece of evidence for features comes from transitive and intransitive verbal tone. On the surface, most verb stems show only a two-way tone contrast, with neutralization of eH and H (though as we will see later, there is a contrast between these two underlyingly).\footnote{Recent fieldwork has unearthed some irregular verbs that do not follow these tonal patterns, including a few eH-toned intransitives, but the majority of verbs do undergo the neutralizations described here.} For transitive verbs, eH and H verb stems neutralize to eH tone, as highlighted in \tabref{tab:mcpherson:1}, with a dummy 3\textsc{sg} object {\it \textipa{\H*a}}.
 
 \begin{table}
-\begin{tabularx}{\textwidth}{XXX}
+\begin{tabular}{lll}
 \lsptoprule
 Underlying tone & Surface form & Gloss \\
 \midrule
@@ -188,7 +188,7 @@ eH & \textbf{\textipa{\H*a b\H{\~a}}} & `hit it' \\
 & \textbf{\textipa{\H*a dz\H{\~i}}} & `put it' \\
 & \textbf{\textipa{\H*a n\H{i}O}} & `eat it' \\
 \lspbottomrule
-\end{tabularx}
+\end{tabular}
 \caption{Transitive verb stems}
 \label{tab:mcpherson:1}
 \end{table}
@@ -295,12 +295,12 @@ When the verb is realis (including when it is perfective), it does not interact 
 Before we turn to the alternations, the inventory of Seenku pronouns is summarized in \tabref{tab:mcpherson:2}.
 
 \begin{table}
-\begin{tabularx}{\textwidth}{XXX} \lsptoprule 
+\begin{tabular}{lll} \lsptoprule 
    Person & Singular & Plural \\ \midrule
   1 & {\textipa{\'n}/\textipa{m\'o}} & {\textipa{m\H{\i}}} \\ 
   2 & {\textipa{\'a (w\'o)}} & {\textipa{\'{\i} (y\'o kw\H{E})}} \\ 
   3 & {\textipa{\H*a w\H*o}} & {\textipa{\H*{\i}}/\textipa{kw\H{E}}} \\ \lspbottomrule
-\end{tabularx}
+\end{tabular}
 \caption{Seenku pronouns}
 \label{tab:mcpherson:2}
 \end{table} 
@@ -310,10 +310,10 @@ Where there are slashes in \tabref{tab:mcpherson:2}, the form on the left is the
 When a noun or verb takes a pronoun as its argument, it follows the pronoun and displays tonal alternations depending on both its own underlying tone and on the tone of the pronoun. It is here that we see the three-way tonal contrast on verb stems emerge despite its neutralization in other contexts. \tabref{tab:mcpherson:3} summarizes the alternations, which are the same for both nouns and verbs. The body of the table displays the resulting tonal form of the head noun or verb based on its underlying form (top row) following pronouns of varying tonal forms (leftmost column).
 
 \begin{table}
-\begin{tabularx}{\textwidth}{X|XXX} 
+\begin{tabularx}{\textwidth}{XXXX} 
 \lsptoprule
-Final tone & \multicolumn{3}{c}{Underlying tone of head} \\
-of pronoun & eL & H & eH \\ \midrule
+Final tone of pronoun & \multicolumn{3}{c}{Underlying tone of head} \\\cmidrule(lr){2-4}
+ & eL & H & eH \\ \midrule
 eL & eL & eL & H \\
 H & eH & eL & eL \\
 eH & eH & eH & eH \\
