@@ -52,7 +52,7 @@
 %   \_ Miscellaneous
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{langsci/langscibook}[2016/06/22 Language Science Press]
+\ProvidesClass{langsci/langscibook}[2016/10/29 Language Science Press]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -190,7 +190,8 @@
 	\lsShowIndextrue}
 \DeclareVoidOption{biblatex}{  			
 	\lsBiblatextrue}
-\DeclareVoidOption{bibtex}{  			
+\DeclareVoidOption{bibtex}{
+  \ClassWarningNoLine{langscibook}{BibTeX frontend deprecated. Please use BibLaTeX in the final version}
 	\lsBiblatexfalse}
 \DeclareVoidOption{nonewtxmath}{  			
 	\lsNewtxmathfalse}
@@ -250,6 +251,8 @@
 %% useful commands for glossings:
 % \usepackage{\stylepath langsci-lgr} #FIXME this should probably be replaced by \usepackage{leipzig}
 \usepackage{todonotes}
+
+\usepackage[english]{babel}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -839,8 +842,8 @@
 \newcommand{\lsCoverTitleAuthor}{
   \renewcommand{\and}{\\}
   \renewcommand{\lastand}{\\}
-  \renewcommand{\newlineCover}{}
-%   \renewcommand{\newlineSpine}{}
+  \renewcommand{\newlineCover}{\\}
+  \renewcommand{\newlineSpine}{}
   \lsCoverBlock
 
   \begin{textblock}{140}(15,17.5)
@@ -1243,8 +1246,8 @@ is, or will remain, accurate or appropriate.
 \iflsBiblatex	% BibLaTeX
 	\usepackage[
 		natbib=true,
-		style=\bstpath biblatex-sp-unified,
-		citestyle=\bstpath sp-authoryear-comp,
+		style=\bstpath biblatex-langsci-unified,
+		citestyle=\bstpath langsci-authoryear-comp,
 		%refsection=chapter,
 		maxbibnames=99,
 		isbn=false,
@@ -1262,8 +1265,8 @@ is, or will remain, accurate or appropriate.
 	\renewcommand{\compcitedelim}{\multicitedelim}
 	\DeclareFieldFormat{postnote}{#1}%
 	%\renewcommand{\nameyeardelim}{ }%
-        \defbibheading{references}{\chapter{References}} 
-\else	%BibTeX
+  \defbibheading{references}{\chapter{References}} 
+\else	%BibTeX (deprecated)
 	\usepackage{natbib}
 	\setlength{\bibsep}{0mm}
 	%% unified style sheet for linguistics journals
@@ -1653,7 +1656,7 @@ is, or will remain, accurate or appropriate.
   \renewcommand{\newlineTOC}{}
   \renewcommand{\newlineCover}{\\}
   \iflsCollectionChapter
-%     \vspace*{-2\baselineskip} 
+    \vspace*{-2\baselineskip} 
     {\LARGE Chapter \thechapter}\newline\newline\fi
   \@title}}
   
