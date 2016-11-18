@@ -446,9 +446,30 @@ For Degema SVCs, we adopt a structure akin to \citet{Collins1997,Collins2002} in
 }
 
 \begin{figure}
-\todo[inline]{That figure could probably be typeset as an example as well, with ea z}
-Asp > \textit{v}\textsubscript{1} > V\textsubscript{1} > \textit{v}\textsubscript{2} > V\textsubscript{2}
-[where > indicates hierarchically higher]
+% \todo[inline]{That figure could probably be typeset as an example as well, with ea z}
+% Asp > \textit{v}\textsubscript{1} > V\textsubscript{1} > \textit{v}\textsubscript{2} > V\textsubscript{2}
+% [where > indicates hierarchically higher]
+\begin{forest} for tree={align=center, base=top}
+[\ldots PolP\slash\ldots AuxP
+  [AspP
+  [Asp°] [v1P
+    [DP\\{[subject]}] [v1'
+	[v1°] [V1P
+	  [(DP)\\{[object]}] [V1'
+	    [V1°] [v2P
+		[e] [v2'
+		  [v2°] [V2P
+			[V2°] [(DP)\\{[object]}]
+		      ]
+		  ]
+	      ]
+	    ]
+	]
+      ]
+    ]
+  ]
+]
+\end{forest}
 \label{figure:1}
 
 % \includegraphics[width=\textwidth]{Rolle-img1.png}
