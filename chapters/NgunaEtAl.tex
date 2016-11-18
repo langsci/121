@@ -10,7 +10,7 @@ Fábio Bonfim Duarte\affiliation{Federal University of Minas Gerais}\lastand
 
 
 
-\abstract{
+\abstract{%
 This article investigates differential object marking (DOM) in four Bantu languages spoken in Mozambique. In Shimakonde DOM is triggered when the direct object is an animate noun of classes 1, 2, 5, 7 and 9, whereas in Emakhuwa DOM can be understood as the consequence of a noun class hierarchy. In Changana and Rhonga  DOM is regulated not by animacy, but by definiteness and specificity in that only specific and definite DPs can trigger object agreement in simple and complex transitive predicates. The paper also explores the grammatical status of the object prefixes that occur in the verb. In all four languages the object prefixes behave more like referential agreement than pronoun incorporation because the object prefixes match in person, number and gender/class with the DP object. In these languages, a syntactic adjacency condition is present between the DP objects and the verb in the transitive verb structure, which indicates that the DP object really occurs in an internal argument position. As for double object constructions, the proposal is that Changana and Rhonga are asymmetrical object languages since \textsc{goal} arguments carry primary object properties, while \textsc{theme} arguments do not. This analysis is confirmed by the facts that (i) \textsc{goals} must precede \textsc{themes} in unmarked ditransitive sentences; (ii) verb agreement only occurs with the \textsc{goals}; and (iii) only \textsc{goals} can be passivized. In double object constructions it is postulated that the reason the \textsc{theme} object is never cross-referenced on the verb is because it is not the closest DP in the search domain of the little {v}. We then hypothesize that the applied \textsc{goal} object is generated in a higher position than the \textsc{theme} object.
 }
 
@@ -508,14 +508,50 @@ The data show that definiteness and specificity play a major role in regulating 
 
 \begin{figure}
 \caption{An object in situ allows an indefinite reading} 
-\includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img1.png}
- \label{fig:nguna:1}
+% \includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img1.png}
+\begin{forest} for tree={align=center,base=top}
+[TP, nice empty nodes
+  [DP\textsubscript{i}] [T'
+    [T°,name=T] [vP
+	[t\textsubscript{i}] [v'
+	  [v°\\see,name=see] [
+	      [$\exists$] [VP
+		[V°] [DP]
+	      ]
+	   ]
+      ]
+    ]
+]
+]
+\draw[->,thick] (see.-150) -| (T);
+\end{forest}
+\label{fig:nguna:1}
 \end{figure}
-
-\todo{redraw with forest}
   
 \begin{figure} 
-\includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img2.png} 
+% \includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img2.png} 
+\begin{forest} for tree={align=center,base=top}
+[TP, nice empty nodes
+  [DP\textsubscript{i}] [T'
+    [T°,name=T] [vP
+      [t\textsubscript{i}] [v'
+	[DP\textsubscript{shifted object}\\person,name=person] [v'
+	  [v°\\see,name=see] [
+	    [$\exists$] [VP
+	      [V°\\<\st{see}>,name=stsee] [DP\\<\st{person}>]
+	    ]
+	  ]	
+	]
+      ]
+    ]
+  ]
+]
+\node [left=5ex of stsee.-157]  (agree) {\strut Agree};
+\draw[->,thick] (see.-150) -| (T);
+\draw[thick] (see) -- (agree.north) -- (person);
+% % % \draw[red] (agree.south) -- (stsee.south); % help lines to visually check orthoganility
+\end{forest}
+
 \caption{An object raised out of the VP allows a definite reading}
 \label{fig:nguna:2}
 \end{figure}
@@ -651,7 +687,21 @@ Based on the fact that the \textsc{goal} (i) is generated in a high thematic pos
 
 \begin{figure}
 \caption{Double object construction structure in Changana}
-\includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img3.png}
+% \includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img3.png}
+\begin{forest}
+[vP
+  [Agent] [v'
+    [v°] [ApplP
+	[Goal] [Appl'
+	    [Appl°] [VP
+	      [V°] [theme]
+	    ]
+	  ]    
+        ]
+    ]
+]
+\end{forest}
+
 \label{fig:nguna:3}
 \end{figure}
 
@@ -666,7 +716,32 @@ In double object constructions, at least in {asymmetrical object languages such 
 
  
 \begin{figure}
-\includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img4.png}
+% \includegraphics[width=\textwidth]{./figures/NgunaDuarteCamargotemplate-img4.png}
+\begin{forest}for tree={s sep=10mm}
+[TP
+  [Agent] [T'
+      [V+v°+T°,name=VvT] [vP
+	[t\textsubscript{agent}] [v'
+	    [theme,name=theme] [v'
+		[Goal,name=goal] [v'
+		    [V+v°,name=vv] [ApplP
+		      [t\textsubscript{Goal},name=Tgoal] [Appl'
+			[Appl°] [VP
+			  [t\textsubscript{v\textsubscript{0}},name=tv0] [t\textsubscript{theme},name=Ttheme]
+			  ]
+			]
+		      ]
+		   ]
+	      ]
+	  ]
+	]
+     ]
+]
+\draw [->, thick] (Tgoal) -- ++(0em,-4ex) -| (goal);
+\draw [->, thick] (Ttheme) -- ++(0em,-4ex) -| (theme);
+\draw [->, thick] (tv0) -- ++(0em,-3ex) -| (vv);
+\draw [->, thick] (vv) -- ++(0em,-4ex) -| (VvT);
+\end{forest}
 \caption{Syntactic derivation of the [{\textbf{\textsc{subject+verb+theme+goal]}}} word order}
 \label{fig:nguna:4}
 \end{figure}

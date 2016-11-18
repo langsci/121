@@ -18,6 +18,11 @@
 \usepackage{amsfonts} % Math packages
 \usepackage{tikz}
 \usepackage{forest}
+\forestset{
+  nice empty nodes/.style={
+  for tree={calign=fixed edge angles},
+  delay={where content={}{shape=coordinate,for parent={for children={anchor=north}}}{}}
+}}
 \usepackage{pifont}
 \usepackage{fixltx2e}
 \usetikzlibrary{decorations.text}
