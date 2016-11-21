@@ -1,0 +1,34 @@
+\newlength{\MAhlandFigP}\settowidth{\MAhlandFigP}{Affirmative 1\textsuperscript{st} person jussive (DU, PL)}
+\newlength{\MAhlandFigPP}\settowidth{\MAhlandFigPP}{Interrogative utterance type}
+\newlength{\MAhlandFigPPP}\settowidth{\MAhlandFigPPP}{Affirmative hypothetical conditional}
+\newlength{\MAhlandFigPPPP}\settowidth{\MAhlandFigPPPP}{Affirmative impersonal jussive}
+\newlength{\MAhlandFigPPPPP}\settowidth{\MAhlandFigPPPPP}{Negative polite (hortative) imperative}
+\newlength{\MAhlandFigPPPQ}\settowidth{\MAhlandFigPPPQ}{Negative non-final verbs~~~}
+\begin{tikzpicture}[align=left]
+\node at (0,0) [align=left,anchor=north] (Features1) {\parbox{\MAhlandFigP}{Affirmative Non-Future\\Affirmative Non-Final Verbs\\Affirmative 1\textsuperscript{st} Person Jussive (DU, PL)\\Aspects:\begin{itemize}[topsep=0pt,itemsep=-.5\baselineskip,label={}]
+                                                                                                                                                                                 \item Past Habitual
+                                                                                                                                                                                 \item Past and present progressive
+                                                                                                                                                                                 \item Completive
+                                                                                                                                                                                 \item Durative 
+                                                                                                                                                                                 \item Iterative\slash Continuative
+                                                                                                                                                                                 \item Non-past habitual
+                                                                                                                                                                                \end{itemize}}};
+                                                                                                                                                                                
+\node at (9,-2) [anchor=north,label={above:\parbox{4cm}{\textbf{Features compatible with Realis or Irrealis}}}] (Features2) {\parbox{\MAhlandFigPP}{Declarative utterance type\\Interrogative utterance type\\Perfect aspect}};
+
+\node [draw, shape=ellipse, fit=(Features1) (Features2), label={above:\textbf{Features requiring the Realis verb form}}] {};
+
+
+\node at (18.5,0) (Features3) [anchor=north] {\parbox{\MAhlandFigPPP}{Affirmative future\\Affirmative simple counterfactual\\Affirmative hypothetical conditional counterfactual\\Affirmative 1\textsuperscript{st} person jussive (SG)}};
+
+\node [below=3\baselineskip of Features3] (IRIF) {\parbox{\MAhlandFigPPPQ}{Negative future\\Negative non-future\\Negative non-final verbs\\Negative hypothetical\newline conditional counterfactual}};
+
+\node [draw, shape=ellipse,fit=(Features2) (IRIF) (Features3), label={above:\textbf{Features requiring the irrealis verb form}}] {};
+
+\node [below=8\baselineskip of IRIF.west] (Features4) {\parbox{\MAhlandFigPPPP}{Affirmative imperative\\Affirmative 3\textsuperscript{rd} person jussive\\Affirmative impersonal jussive\\Affirmative polite (hortative) imperative\\Negative imperative\\Most highly nominalized subordinate verbs}};
+\node [fit=(Features4) (IRIF),draw, densely dotted, shape=ellipse, rotate fit=90,label={left:\textbf{Features requiring the infinite verb stem}}] (FRIVS) {};
+
+\node [below=12\baselineskip of Features2.west, anchor=north] (Features5) {\parbox{\MAhlandFigPPPPP}{Negative 3\textsuperscript{rd} person jussive\\Negative polite (hortative) imperative}};
+
+\node [draw, dashed,fit=(Features4) (Features5),label={150:\textbf{Features outside realis--irrealis opposition}}] {};
+\end{tikzpicture}
