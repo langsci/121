@@ -555,7 +555,23 @@ The discussion thus far has focused on necessary preliminaries including evidenc
 \figref{fig:1} reflects the fact that infinitive stems are used in various types of verbal constructions, ranging from the more nominalized subordinate complements, to final verbs that do not take tense marking (e.g. imperatives/jussives), to negative declarative and interrogative final verbs, which, apart from their required infinitive stems, appear to be otherwise fully finite. 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/MAhlandFig1.png}	
+% \includegraphics[width=\textwidth]{figures/MAhlandFig1.png}	
+\begin{tikzpicture}
+\draw[thick] (0,0) to (10,0);
+	\foreach \x in {2,5,8}	\draw[thick] (\x,5pt) -- (\x,0pt);
+\node at (-2,0) [anchor=west] {Nominal};	
+\node at (12,0) [anchor=east] {Finite};	
+
+\node at (2,2.5) (SV) {\rotatebox{90}{\parbox[c]{3.75cm}{Modality complements\newline Perception, cognition, \&\newline utterance complements}}};
+\node at (5,2.5) (fv) {\rotatebox{90}{\parbox[c]{3.75cm}{Affirmative imperative\newline3\textsuperscript{rd} jussive\newline Simple jussive\newline Polite imperative}}};
+\node at (8,2.5) (FV) {\rotatebox{90}{\parbox[c]{3.75cm}{Negative declarative\newline negative interrogative}}};
+
+\node [above=\baselineskip of SV] {Subordinate verb};
+\node [above=\baselineskip of fv] {Final verb};
+\node [above=\baselineskip of FV] {Final verb};
+
+\end{tikzpicture}
+
 \caption{A nominal-finite continuum of infinitive verb stem usage}
 \label{fig:1}
 \end{figure}
