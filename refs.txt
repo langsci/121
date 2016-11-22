@@ -4507,7 +4507,7 @@ text indent calculated (toc, 0): 16.42499pt
 number indent calculated (toc, 0): 0.0pt
 
 Overfull \hbox (11.76779pt too wide) in paragraph at lines 551--551
- [][] [][]\EU1/LinLibertine_R_B.otf(0)/bx/n/10.95 Daatsʼíin, a newly identifie
+ [][] [][]\EU1/LinLibertine_R_B.otf(0)/bx/n/10.95 Daats??i??in, a newly identifie
 d undocumented language of western Ethiopia: 
  []
 
@@ -5183,14 +5183,14 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 420.
  [42] [43]
 Overfull \hbox (35.17142pt too wide) in paragraph at lines 422--422
-\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 90–98. http://www.lingref.com/cpp/acal/4
+\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 90???98. http://www.lingref.com/cpp/acal/4
 2/index.html, document no. 2761. Somerville,
  []
 
 [44]
 Overfull \hbox (13.94394pt too wide) in paragraph at lines 422--422
 \EU1/LinLibertine_R_B.otf(0)/m/it/10.95 categories: production, perception and 
-comprehension\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 , 267–290. Dordrecht: Sprin
+comprehension\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 , 267???290. Dordrecht: Sprin
 ger
  []
 
@@ -5271,8 +5271,8 @@ LaTeX Warning: Citation 'Nikiema1989' on page 52 undefined on input line 135.
 
 
 Underfull \hbox (badness 1533) in paragraph at lines 192--192
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘\EU1/LinLibertine_R_B.otf(0)/m/it/10
-.95 sagbo\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ’ (type of
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???\EU1/LinLibertine_R_B.otf(0)/m/it/10
+.95 sagbo\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ??? (type of
  []
 
 [52]
@@ -5330,7 +5330,7 @@ Overfull \hbox (1.825pt too wide) in paragraph at lines 675--692
 
 [68]
 Overfull \hbox (2.40454pt too wide) in paragraph at lines 693--693
-[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Givón, T. 2001. \EU1/LinLibertine_R_
+[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Giv??n, T. 2001. \EU1/LinLibertine_R_
 B.otf(0)/m/it/10.95 Syntax: An introduction\EU1/LinLibertine_R_B.otf(0)/m/n/10.
 95 . Amsterdam/Philadelphia: John Benjamins. 
  []
@@ -5474,7 +5474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
 [102]
 Overfull \hbox (3.20757pt too wide) in paragraph at lines 166--167
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Particle \EU1/LinLibertine_R_B.otf(0)/
-m/it/10.95 ká \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 typically precedes the imm
+m/it/10.95 k?? \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 typically precedes the imm
 ediate postverbal constituent which tends
  []
 
@@ -5533,7 +5533,7 @@ File: ./langsci/graphics/langsci_spinelogo_nocolor.pdf Graphic file (type QTm)
 ] [120]
 Overfull \hbox (1.90823pt too wide) in paragraph at lines 57--58
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 The remainder of this paper is structu
-red as follows: §[]2[] gives a general overview
+red as follows: ??[]2[] gives a general overview
  []
 
 
@@ -5792,12 +5792,12 @@ Overfull \hbox (2.84235pt too wide) in paragraph at lines 417--417
 
 
 Overfull \hbox (1.6488pt too wide) in paragraph at lines 417--417
-[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 o=V́=n 
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 o=V??=n 
  []
 
 
 Overfull \hbox (4.06876pt too wide) in paragraph at lines 417--417
-\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 o=V́=te 
+\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 o=V??=te 
  []
 
 [174]
@@ -5812,7 +5812,7 @@ LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/bx/n' will be
 
 Overfull \hbox (11.56706pt too wide) in paragraph at lines 440--441
 \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 framework which encompasses multi-word a
-nd one-word SVCs” in order to “breach
+nd one-word SVCs??? in order to ???breach
  []
 
 \forest@temp@box=\box32767 (local)
@@ -5940,7 +5940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--239
 
 [218] [219] [220]
 Overfull \hbox (5.22472pt too wide) in paragraph at lines 345--345
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘suffered’| 
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???suffered???| 
  []
 
 
@@ -5960,7 +5960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 458--458
 
 [223] [224]
 Underfull \hbox (badness 10000) in paragraph at lines 527--527
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘looked
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???looked
  []
 
 
@@ -5972,7 +5972,7 @@ Overfull \hbox (2.34232pt too wide) in paragraph at lines 534--535
 
 [225]
 Underfull \hbox (badness 10000) in paragraph at lines 590--590
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘understand
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???understand
  []
 
 [226] [227] [228] [229]
@@ -6175,15 +6175,15 @@ spects of morphological productivity. In Geert
 
 Overfull \hbox (4.3628pt too wide) in paragraph at lines 587--587
 [][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Corbin, Danielle. 1987. \EU1/LinLibe
-rtine_R_B.otf(0)/m/it/10.95 Morphologie dérivationelle et structuration du lexi
-que\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 . Tübin-
+rtine_R_B.otf(0)/m/it/10.95 Morphologie d??rivationelle et structuration du lexi
+que\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 . T??bin-
  []
 
 [294]
 Overfull \hbox (2.9812pt too wide) in paragraph at lines 587--587
 \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 exploring qualitative versus quantitativ
 e approaches. \EU1/LinLibertine_R_B.otf(0)/m/it/10.95 English Studies \EU1/LinL
-ibertine_R_B.otf(0)/m/n/10.95 94(4). 422–
+ibertine_R_B.otf(0)/m/n/10.95 94(4). 422???
  []
 
 
@@ -6387,7 +6387,7 @@ LaTeX Warning: Reference `sec:gluckman:3' on page 300 undefined on input line 1
 
 
 Overfull \hbox (4.89005pt too wide) in paragraph at lines 113--114
-\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 causative marker. In §[]-4 we review fur
+\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 causative marker. In ??[]-4 we review fur
 ther parallels in Luragooli to anticausative
  []
 
@@ -6551,8 +6551,8 @@ t ACAL 46, Eugene, Oregon, 26-28 March, 2015.)[]
 Overfull \hbox (823.74596pt too wide) in paragraph at lines 558--558
 []\EU1/DejaVuSansMono.ttf(0)/m/n/10.95 Seidl, Amanda & Dimitriadis, Alexis. 200
 3. Statives and reciprocal morphology in Swahili. In Sauzet, Patrick & Zribi-He
-rtz, Anne (eds.), Typologie des langues d’Afrique et universaux de la grammaire
-, 239-284. Paris: L’Harmattan[] 
+rtz, Anne (eds.), Typologie des langues d???Afrique et universaux de la grammaire
+, 239-284. Paris: L???Harmattan[] 
  []
 
 
@@ -6774,8 +6774,8 @@ LaTeX Warning: Citation 'Schaefer1985' on page 322 undefined on input line 102.
 
 
 Overfull \hbox (29.68628pt too wide) in paragraph at lines 102--103
-[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘The boy is running with heavy footfal
-l to under the mountain.’ ([]) 
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???The boy is running with heavy footfal
+l to under the mountain.??? ([]) 
  []
 
 
@@ -7145,7 +7145,7 @@ Overfull \hbox (35.9845pt too wide) in paragraph at lines 77--77
  []
 
 
-LaTeX Warning: Citation 'KittiläZúñiga2010' on page 342 undefined on input line
+LaTeX Warning: Citation 'Kittil??Z????iga2010' on page 342 undefined on input line
  77.
 
 
@@ -7365,9 +7365,9 @@ LaTeX Warning: Reference `ex:sibanda:6c' on page 350 undefined on input line 32
 [350] [351]
 Overfull \hbox (6.02908pt too wide) in paragraph at lines 449--450
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Note that roots such as \EU1/LinLibert
-ine_R_B.otf(0)/m/it/10.95 nind \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘smear’ a
+ine_R_B.otf(0)/m/it/10.95 nind \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???smear??? a
 nd \EU1/LinLibertine_R_B.otf(0)/m/it/10.95 gcob \EU1/LinLibertine_R_B.otf(0)/m/
-n/10.95 ‘smear’ can take a null-instantiated
+n/10.95 ???smear??? can take a null-instantiated
  []
 
 [352]
@@ -7461,7 +7461,7 @@ s.[]
 Overfull \hbox (422.64778pt too wide) in paragraph at lines 797--797
 []\EU1/DejaVuSansMono.ttf(0)/m/n/10.95 Fillmore, Charles J. 1986. Pragmatically
  controlled zero anaphora. Proceedings of the Twelfth Annual Meeting of the Ber
-keley Linguistics Society . 95–
+keley Linguistics Society . 95???
  []
 
 
@@ -7588,7 +7588,7 @@ LaTeX Warning: Citation '1988' on page 367 undefined on input line 40.
 LaTeX Warning: Citation '1990' on page 367 undefined on input line 40.
 
 
-LaTeX Warning: Citation 'Givón1976' on page 367 undefined on input line 40.
+LaTeX Warning: Citation 'Giv??n1976' on page 367 undefined on input line 40.
 
 
 LaTeX Warning: Citation 'Croft1988' on page 367 undefined on input line 40.
@@ -7844,7 +7844,7 @@ ogy of Differential Argument marking, University of Konstanz, April 5-6, 2014.)
 
 
 Overfull \hbox (305.74652pt too wide) in paragraph at lines 807--807
-[]\EU1/DejaVuSansMono.ttf(0)/m/n/10.95 Givón, Talmy. 1976. Topic, pronoun and g
+[]\EU1/DejaVuSansMono.ttf(0)/m/n/10.95 Giv??n, Talmy. 1976. Topic, pronoun and g
 rammatical agreement. In Li, Charles (ed.), Subject and Topic. New York: Academ
 ic Press.[] 
  []
@@ -7852,7 +7852,7 @@ ic Press.[]
 
 Overfull \hbox (684.76779pt too wide) in paragraph at lines 809--809
 []\EU1/DejaVuSansMono.ttf(0)/m/n/10.95 Jelinek, Eloise. 1989. The case split an
-d pronominal arguments in Choctaw. In Maracz, La\’ szló & Muysken, Pieter (eds.
+d pronominal arguments in Choctaw. In Maracz, La\??? szl?? & Muysken, Pieter (eds.
 ), Configurationality: The typology of asymmetries. Dordrecht: Foris Publicatio
 ns.[] 
  []
@@ -8192,7 +8192,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 742--742
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 742--742
-\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 sultant’s comments for
+\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 sultant???s comments for
  []
 
 [410]
@@ -8206,7 +8206,7 @@ _R_B.otf(0)/m/it/10.95 Association with focus\EU1/LinLibertine_R_B.otf(0)/m/n/1
 Overfull \hbox (6.03175pt too wide) in paragraph at lines 745--745
 [][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Walusimbi, Livingstone. 1996. \EU1/L
 inLibertine_R_B.otf(0)/m/it/10.95 Relative clauses in Luganda\EU1/LinLibertine_
-R_B.otf(0)/m/n/10.95 . Cologne: Rüdiger Köppe
+R_B.otf(0)/m/n/10.95 . Cologne: R??diger K??ppe
  []
 
 [411]) [412]
@@ -8384,22 +8384,22 @@ made between countable and non-countable
 
 [438] [439] [440] [441] [442]
 Overfull \hbox (1.16629pt too wide) in paragraph at lines 208--208
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘butterfly’| 
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???butterfly???| 
  []
 
 
 Overfull \hbox (4.15564pt too wide) in paragraph at lines 208--208
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘mosquito’| 
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???mosquito???| 
  []
 
 
 Overfull \hbox (8.09764pt too wide) in paragraph at lines 208--208
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘caterpillar’| 
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???caterpillar???| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 208--208
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘wasp,
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???wasp,
  []
 
 
@@ -8414,7 +8414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--208
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 208--208
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘ant,
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???ant,
  []
 
 
@@ -8424,7 +8424,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--208
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 208--208
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘ant,
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???ant,
  []
 
 
@@ -8444,12 +8444,12 @@ Overfull \hbox (6.22597pt too wide) in paragraph at lines 396--396
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 396--396
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘water-
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???water-
  []
 
 
 Overfull \hbox (8.99632pt too wide) in paragraph at lines 396--396
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘television’| 
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???television???| 
  []
 
 
@@ -8476,7 +8476,7 @@ s show patterns which are also present
 [448] [449] [450] [451]
 Overfull \hbox (19.56667pt too wide) in paragraph at lines 484--485
 \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 languages of the Daju family, Shatt and 
-Sila. The three-way distinction for ‘tooth’/‘(set
+Sila. The three-way distinction for ???tooth???/???(set
  []
 
 [452] [453] [454] [455] [456] [457]
@@ -8489,7 +8489,7 @@ bridge Textbooks in Linguistics). Cambridge:
 
 Overfull \hbox (1.81696pt too wide) in paragraph at lines 680--680
 [][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Creissels, Denis, Gerrit Dimmendaal,
- Zygmunt Frajzyngier & Christa König. 2008.
+ Zygmunt Frajzyngier & Christa K??nig. 2008.
  []
 
 [458]) [459]
@@ -8556,12 +8556,12 @@ Overfull \hbox (0.67914pt too wide) in paragraph at lines 122--127
 
 [466]
 Overfull \hbox (1.50363pt too wide) in paragraph at lines 178--178
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 /ahaˊáma/| 
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 /aha????ma/| 
  []
 
 
 Overfull \hbox (7.72324pt too wide) in paragraph at lines 178--178
-[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ‘porcupine’| 
+[]|\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 ???porcupine???| 
  []
 
 [467]
@@ -8719,7 +8719,7 @@ bridge Textbooks in Linguistics). Cambridge:
 
 
 Overfull \hbox (2.40454pt too wide) in paragraph at lines 1636--1636
-[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Givón, T. 2001. \EU1/LinLibertine_R_
+[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Giv??n, T. 2001. \EU1/LinLibertine_R_
 B.otf(0)/m/it/10.95 Syntax: An introduction\EU1/LinLibertine_R_B.otf(0)/m/n/10.
 95 . Amsterdam/Philadelphia: John Benjamins. 
  []
@@ -8919,13 +8919,13 @@ Overfull \hbox (0.77046pt too wide) in paragraph at lines 806--806
 [539]
 Overfull \hbox (28.4327pt too wide) in paragraph at lines 866--867
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 It has been argued that purpose clause
-s are “intrinsically future-oriented” ([][][][]Schmidtke-
+s are ???intrinsically future-oriented??? ([][][][]Schmidtke-
  []
 
 
 Overfull \hbox (0.60858pt too wide) in paragraph at lines 866--867
 \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 source of future constructions across ma
-ny of the world’s languages (p.181). These
+ny of the world???s languages (p.181). These
  []
 
 [540]
@@ -8940,14 +8940,14 @@ LaTeX Warning: Reference `tab:mahland:5' on page 542 undefined on input line 94
 
 [542] [543]
 Overfull \hbox (2.17462pt too wide) in paragraph at lines 977--978
-[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Givón has noted that in languages whic
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Giv??n has noted that in languages whic
 h place complements (including clauses)
  []
 
 
 Overfull \hbox (8.06308pt too wide) in paragraph at lines 977--978
 \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 immediately adjacent to verbs, co-lexica
-lization and clause-union can result ([][][][]Givón
+lization and clause-union can result ([][][][]Givo??n
  []
 
 [544]
@@ -8964,14 +8964,14 @@ ertine_R_B.otf(0)/m/it/10.95 Comparative morphology of the Omotic languages\EU1
 
 
 Overfull \hbox (0.50377pt too wide) in paragraph at lines 1047--1047
-[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Givón, Talmy. 2001. \EU1/LinLiberti
+[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Givo??n, Talmy. 2001. \EU1/LinLiberti
 ne_R_B.otf(0)/m/it/10.95 Syntax: An introduction, vol. 2\EU1/LinLibertine_R_B.o
 tf(0)/m/n/10.95 . Amsterdam/Philadelphia: John
  []
 
 
 Overfull \hbox (2.79785pt too wide) in paragraph at lines 1047--1047
-[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Givón, Talmy. 2009. \EU1/LinLiberti
+[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Givo??n, Talmy. 2009. \EU1/LinLiberti
 ne_R_B.otf(0)/m/it/10.95 The genesis of syntactic complexity: Diachrony, ontoge
 ny, neuro-
  []
@@ -9048,7 +9048,7 @@ ng reflexive and reciprocal markers in African
 
 Overfull \hbox (15.88306pt too wide) in paragraph at lines 542--542
 \EU1/LinLibertine_R_B.otf(0)/m/it/10.95 reflexives: Theoretical and typological
- explorations, \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 1–32. Berlin: Mouton De G
+ explorations, \EU1/LinLibertine_R_B.otf(0)/m/n/10.95 1???32. Berlin: Mouton De G
 ruyter. 
  []
 
@@ -9066,7 +9066,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\newline' on input line 14.
 
 
-LaTeX Warning: Citation 'Güldemann2008' on page 573 undefined on input line 20.
+LaTeX Warning: Citation 'G??ldemann2008' on page 573 undefined on input line 20.
 
 
 
@@ -9101,16 +9101,16 @@ File: ./langsci/graphics/langsci_spinelogo_nocolor.pdf Graphic file (type QTm)
 LaTeX Warning: Citation 'Sibomana1981' on page 574 undefined on input line 25.
 
 
-LaTeX Warning: Citation 'Güldemann2008' on page 574 undefined on input line 42.
+LaTeX Warning: Citation 'G??ldemann2008' on page 574 undefined on input line 42.
 
 
 [574]
 
-LaTeX Warning: Citation 'Güldemann2008' on page 575 undefined on input line 46.
+LaTeX Warning: Citation 'G??ldemann2008' on page 575 undefined on input line 46.
 
 
 
-LaTeX Warning: Citation 'Güldemann2008' on page 575 undefined on input line 46.
+LaTeX Warning: Citation 'G??ldemann2008' on page 575 undefined on input line 46.
 
 
 
@@ -9162,7 +9162,7 @@ LaTeX Warning: Citation 'Vydrine2009' on page 577 undefined on input line 153.
 
 LaTeX Warning: Citation 'Cook1972' on page 577 undefined on input line 162.
 
-Missing character: There is no ɔ in font cmmi10!
+Missing character: There is no ?? in font cmmi10!
 
 Overfull \hbox (1.30956pt too wide) in paragraph at lines 168--169
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 In Guro (\EU1/LinLibertine_R_B.otf(0)/
@@ -9271,7 +9271,7 @@ LaTeX Warning: Citation 'Babaev2010' on page 583 undefined on input line 426.
 
 
 Overfull \hbox (1.06602pt too wide) in paragraph at lines 426--427
-\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Benue-Congo cautions the reader that “… 
+\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Benue-Congo cautions the reader that ?????? 
 various phonological processes of merg-
  []
 
@@ -9467,7 +9467,7 @@ LaTeX Warning: Citation 'Boyeldieu1990' on page 591 undefined on input line 720
 LaTeX Warning: Citation 'Boyeldieu1990' on page 591 undefined on input line 727
 .
 
-Missing character: There is no ꜜ in font [./langsci/fonts/LinLibertine_R_B]/OT:
+Missing character: There is no ??? in font [./langsci/fonts/LinLibertine_R_B]/OT:
 script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+liga;+pnum;!
 
 LaTeX Warning: Citation 'Larochette1958' on page 591 undefined on input line 74
@@ -9566,7 +9566,7 @@ Overfull \hbox (13.76651pt too wide) in alignment at lines 955--955
 [596]
 Overfull \hbox (1.81696pt too wide) in paragraph at lines 1500--1500
 [][]\EU1/LinLibertine_R_B.otf(0)/m/n/10.95 Creissels, Denis, Gerrit Dimmendaal,
- Zygmunt Frajzyngier & Christa König. 2008.
+ Zygmunt Frajzyngier & Christa K??nig. 2008.
  []
 
 ) [597]
