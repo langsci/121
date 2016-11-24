@@ -14,7 +14,7 @@ The notion of \textsc{gender polarity} is a well established part of the descrip
 \begin{document}
 
  
-\todo{the tables were typeset in a strange way. I have tried to repair most of them, but for some, the intended meaning was not clear}
+% \todo{the tables were typeset in a strange way. I have tried to repair most of them, but for some, the intended meaning was not clear}
  
 % Keywords: Somali, polarity, gender, number, agreement.
 
@@ -82,7 +82,7 @@ It is traditionally argued that a distinct gender value is associated with the p
 
 Another important exponent of gender is also regularly pointed out in the literature, namely the position of tonal accent, realised as high pitch, which falls on the second to last mora of the stem in most masculine singular nouns and on the last mora of the stem in most feminine singular nouns, as shown in \tabref{tab:nilsson:3}.\footnote{This is not an exceptionless principle, but it applies to the vast majority of nouns ending in a consonant or a vowel other than \textit{-e} or \textit{-o}; nouns ending in these two vowels are subject to specific tonal accent assignment rules of their own.}
  
-\begin{table}
+\begin{table}[t]
 \caption{The interdependence between gender and tonal accent}
 \label{tab:nilsson:3}
 
@@ -92,10 +92,12 @@ Another important exponent of gender is also regularly pointed out in the litera
  \midrule
  
 {\textsc{masculine}}\\
+\midrule
 {‘boy’} & \textit{ínan}      & \textit{ínan-\textbf{k}-a}   \\
 {‘stool’} &  \textit{gámbar}  &  \textit{gámbar-\textbf{k}-a}\\
 \\
 {\textsc{feminine}}\\
+\midrule
 ‘girl’  & \textit{inán}  &   \textit{inán-\textbf{t}-a} \\
 ‘reason’  &  \textit{sabáb} &  \textit{sabáb-\textbf{t}-a} \\
   
@@ -106,7 +108,7 @@ Another important exponent of gender is also regularly pointed out in the litera
 
 This gender-based distribution of tonal accent plays an important role in the traditional argumentation because of a group of nouns referred to as the 5th declension by Saeed (\citeyear*[134]{Saeed1993}; \citeyear*[61]{Saeed1999}) and \citet[48]{Orwin1995}. In this group of nouns we find, for instance, \textit{dibi} ‘ox’. The nouns in the 5th declension lack an overt plural morpheme, and therefore they may be considered to exhibit “pure” gender polarity as they form their plural simply by changing their gender, which in the indefinite form is expressed merely by means of tonal accent shift.
  
-\begin{table}
+\begin{table}[t]
 \caption{A noun in the 5th declension: \textit{dibi} `ox'}
 \label{tab:nilsson:4}
 
@@ -160,25 +162,36 @@ In order to establish whether Somali has a gender distinction in the plural, we 
 \caption{Exponents of agreement in Somali}
 \label{tab:nilsson:5}
 
-\begin{tabularx}{\textwidth}{lp{4cm}Xrr}
+\begin{tabularx}{.75\textwidth}{lXlcc}
 \lsptoprule
- &  &  & \parbox{2cm}{\centering \textsc{sg}} & \parbox{2cm}{\centering \textsc{pl}}\\
+ &  &  & \textsc{sg}  &   \textsc{pl} \\
 \midrule
-{\textsc{Verbs}} & {\textsc{Present indicative}} & {\textsc{m}} & {\textit{-aa}} & {\textit{-aan}}\\
-\hhline{~~~~-} &  & {\textsc{f}} & {\textit{-taa}} & \\
-\hhline{~----} & {\textsc{Past indicative}} & {\textsc{m}} & {\textit{-ay}} & {\textit{-een}}\\
-\hhline{~~~~-} &  & {\textsc{f}} & {\textit{-tay}} & \\
-\hhline{~----} & {\textsc{Present subjunctive}} & {\textsc{m}} & {\textit{-o}} & {\textit{-aan}}\\
-\hhline{~~~~-} &  & {\textsc{f}} & {\textit{-to}} & \\
-{\textsc{Pronouns}} & {\textsc{Reduced personal}} & {\textsc{m}} & {\textit{uu}} & {\textit{ay}}\\
-\hhline{~~~~-} &  & {\textsc{f}} & {\textit{ay}} & \\
-\hhline{~----} & {\textsc{Full personal}} & {\textsc{m}} & {\textit{isaga}} & {\textit{iyaga}}\\
-\hhline{~~~~-} &  & {\textsc{f}} & {\textit{iyada}} & \\
-\hhline{~----} & {\textsc{Demonstrative}} & {\textsc{m}} & {\textit{kan}} & {\textit{kuwan}}\\
-\hhline{~~~~-} &  & {\textsc{f}} & {\textit{tan}} & \\
-\hhline{~----} & {\textsc{Possessive}} & {\textsc{m}} & {\textit{-iis}} & {\textit{-ood}}\\
-\hhline{~~~~-} &  & {\textsc{f}} & {-\textit{eed}} & \\
-\hhline{----~}
+{\textsc{Verbs}} & {\textsc{Present indicative}} & {\textsc{m}} & {\textit{-aa}} &\multirow{2}{*} {\textit{-aan}}\\
+&  & {\textsc{f}} & {\textit{-taa}} & \\
+\tablevspace
+ 
+& {\textsc{Past indicative}} & {\textsc{m}} & {\textit{-ay}} & \multirow{2}{*}{\textit{-een}}\\
+ &  & {\textsc{f}} & {\textit{-tay}} & \\
+\tablevspace
+ 
+& {\textsc{Present subjunctive}} & {\textsc{m}} & {\textit{-o}} & \multirow{2}{*}{\textit{-aan}}\\
+&  & {\textsc{f}} & {\textit{-to}} & \\
+\tablevspace
+
+\midrule
+{\textsc{Pronouns}} & {\textsc{Reduced personal}} & {\textsc{m}} & {\textit{uu}} & \multirow{2}{*}{\textit{ay}}\\
+ &  & {\textsc{f}} & {\textit{ay}} & \\
+ 
+\tablevspace
+ & {\textsc{Full personal}} & {\textsc{m}} & {\textit{isaga}} & \multirow{2}{*}{\textit{iyaga}}\\
+ &  & {\textsc{f}} & {\textit{iyada}} & \\
+ 
+\tablevspace
+ & {\textsc{Demonstrative}} & {\textsc{m}} & {\textit{kan}} & \multirow{2}{*}{\textit{kuwan}}\\
+ &  & {\textsc{f}} & {\textit{tan}} & \\
+
+\tablevspace& {\textsc{Possessive}} & {\textsc{m}} & {\textit{-iis}} & \multirow{2}{*}{\textit{-ood}}\\
+ &  & {\textsc{f}} & {-\textit{eed}} & \\ 
 \lspbottomrule
 \end{tabularx}
 
@@ -242,6 +255,7 @@ As becomes evident from \tabref{tab:nilsson:6}, the polar syncretism is not tota
 \begin{tabularx}{\textwidth}{XXXX}
 \lsptoprule
 & & {\textsc{singular}} & {\textsc{plural}} \\
+\midrule
 {\textsc{common gender}}
 
 {\textsc{neuter}} & {‘the stone’}
@@ -263,6 +277,7 @@ As becomes evident from \tabref{tab:nilsson:6}, the polar syncretism is not tota
 \begin{tabularx}{\textwidth}{XXXXX}
 \lsptoprule
 & & {\textsc{singular}} &  {\textsc{dual}} & {\textsc{plural}} \\
+\midrule
 {\textsc{masculine}} & {‘train’} & {\textit{vlak}} & {\textit{vlak-}\textbf{\textit{a}}} & {\textit{vlak-}\textbf{\textit{i}}} \\
 
 {\textsc{neuter}} & {‘window’} & {\textit{okn-o}} & {\textit{okn-}\textbf{\textit{i}}} & {\textit{okn-}\textbf{\textit{a}}} \\
@@ -423,7 +438,7 @@ The type of nouns found in the 5th declension are highly interesting, as these n
 
 {\textit{buúg-}\textbf{\textit{t}}\textit{-a}} & {‘the book’}
 
-{‘the books’} & {\textit{buug-ág-}\textbf{\textit{g}}\textit{-a}\textsuperscript{a}} & {‘the books’}\\
+{‘the books’} & {\textit{buug-ág-}\textbf{\textit{g}}\textit{-a}}\footnote{\textit{Buugagga} is the regular form. There is, however, a general preference for an irregular plural with a long epenthetic /a:/ and the article \{t\}, i.e. \textit{buugaagta} ‘the books’.} & {‘the books’}\\
 \tablevspace
 {\textsc{m}}
 
@@ -434,10 +449,10 @@ The type of nouns found in the 5th declension are highly interesting, as these n
 {‘the thieves’} & {\textit{tuug-ág-}\textbf{\textit{g}}\textit{-a}} & {‘the thieves’}\\
 \lspbottomrule
 \end{tabularx}
-
+ 
 \end{table} 
 
-\textsuperscript{a} \textit{Buugagga} is the regular form. There is, however, a general preference for an irregular plural with a long epenthetic /a:/ and the article \{t\}, i.e. \textit{buugaagta} ‘the books’.
+
 
 Interestingly enough, a very similar pattern can be found in Swedish for the noun \textit{mygga} ‘mosquito’ (\tabref{tab:nilsson:11}).\textit{} 
 
@@ -520,7 +535,7 @@ Other examples of nouns that behave as collective nouns, not included within the
 Another interesting group of Somali nouns, which are indisputably singular, form a totally regular plural; and yet, in the singular, they may trigger both syntactic agreement in the singular and semantic agreement in the plural. These words are, according to \citet[188]{Corbett2000}, so-called \textit{corporate nouns}, i.e. “nouns which are singular morphologically and (typically) have a normal plural and yet, when singular, may take plural agreement”. This pattern can frequently be observed in Somali and seems to be equally common in both genders. Some examples are in \tabref{tab:nilsson:14}.
  
 \begin{table}
-\caption{Somali corporate nouns}
+\caption{Somali corporate nouns}[b]
 \label{tab:nilsson:14}
 \begin{tabularx}{\textwidth}{XlXlX}
 \lsptoprule
@@ -528,14 +543,13 @@ Another interesting group of Somali nouns, which are indisputably singular, form
 \midrule 
 {‘family’} & {\textit{qoys}} &  {\textit{qoys-}\textbf{\textit{k}}\textit{-a}} & {\textit{qoys-as}} & {\textit{qoys-as-}\textbf{\textit{k}}\textit{-a}}\\
 {‘group, team’} & {\textit{koox}} &  {\textit{koox-}\textbf{\textit{d}}\textit{-a}} & {\textit{koox-o}} & {\textit{koox-a-}\textbf{\textit{h}}\textit{-a}}\\
-{‘camel herd’} & {\textit{geel}} &  {\textit{geel-a}\textsuperscript{a}} & {\textit{geel-al}} & {\textit{geel-a-}\textbf{\textit{sh}}\textit{-a}}\\
+{‘camel herd’} & {\textit{geel}} &  {\textit{geel-a}}\footnote{This noun is a unique exception, realising the definite article \{k\} as zero in the singular.} & {\textit{geel-al}} & {\textit{geel-a-}\textbf{\textit{sh}}\textit{-a}}\\
 \lspbottomrule
 \end{tabularx}
 
 \end{table} 
 
 
-\textsuperscript{a} This noun is a unique exception, realising the definite article \{k\} as zero in the singular.
 
 In \REF{ex:nilsson:8}, we find the masculine singular noun \textit{qoyskiisu} ‘his family’ with the predicate verb \textit{dhaqdaan} ‘breed’ and the subject pronoun \textit{ay}, here\footnote{The homonymous subject pronoun \textit{ay} ‘they; she, it’ represents the 3\textsuperscript{rd} person plural as well as the feminine 3\textsuperscript{rd} person singular. When it occurs together with a masculine subject noun, it may therefore only be interpreted as plural.} representing the plural meaning ‘they’. The verb and the pronoun could, however, just as well have been in the masculine singular, like the predicate verb \textit{yahay} ‘is’ and the subject pronoun \textit{uu} ‘he, it’ in \REF{ex:nilsson:9}.
 
@@ -588,7 +602,7 @@ Therefore, instead of the traditional view referred to as \textit{gender polarit
 \caption{Polarity of the exponents of definiteness in Somali nouns}
 \label{tab:nilsson:15}
 
-\begin{tabularx}{\textwidth}{XXX} & \textsc{Singular}& \textsc{Plural}\\
+\begin{tabularx}{.5\textwidth}{lXX} & \textsc{Singular}& \textsc{Plural}\\
 \lsptoprule
  \textsc{Feminine}& \{t\}& \{k\}\\
 \hhline{--~} &  & \\
