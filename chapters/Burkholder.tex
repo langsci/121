@@ -361,12 +361,12 @@ The same analysis used for present tense clauses in \sectref{sec:burkholder:2.2}
 \caption{Realizations of Past Tense} %title of the table 
 \centering % centering table 
 \begin{tabular}{c| rr|r|r} % creating eight columns 
-\midrule%inserting double-line 
+\lsptoprule%inserting double-line 
  &\multicolumn{2}{c}{-nga-}& \multicolumn{1}{|c}{-e-}& \multicolumn{1}{|c}{$\emptyset$} \\ [0.5ex] 
 \midrule% inserts single-line 
 Neg & + & + & - & -\\ % Entering row contents 
 Verbal & + & - & +& -\\[1ex] % [1ex] adds vertical space 
-\midrule% inserts single-line 
+\lspbottomrule% inserts single-line 
 \end{tabular} 
 \label{tab:burkholder:4}
 \end{table} 
@@ -458,13 +458,13 @@ Lexical differences aside, the noteworthy difference from the present tense sent
 \begin{table}
 \caption{Realizations of \textit{hamba} `go'} %title of the table 
 \centering % centering table 
-\begin{tabular}{|c|c|c|} % creating eight columns 
-\hline%inserting double-line 
- & Present & Past\\ [0.5ex] 
+\begin{tabular}{lll}
+\lsptoprule
+ & Present & Past\\
 \midrule% inserts single-line 
 Positive & hamb-a  & hamb-e  \\ % Entering row contents 
 Negative & hamb-i & hamb-nga $\longrightarrow$ \textit{hamb-a-nga}\\[1ex] % [1ex] adds vertical space 
-\midrule% inserts single-line 
+\lspbottomrule
 \end{tabular} 
 \label{tab:burkholder:5} 
 \end{table} 
@@ -750,12 +750,12 @@ It is worth noting as well that \nga is the only overt realization of tense whic
 \caption{Realizations of Past Tense} %title of the table 
 \centering % centering table 
 \begin{tabular}{c| rr|r|r} % creating eight columns 
-\midrule%inserting double-line 
+\lsptoprule%inserting double-line 
  &\multicolumn{2}{c}{-nga-}& \multicolumn{1}{|c}{-e-}& \multicolumn{1}{|c}{$\emptyset$} \\ [0.5ex] 
 \midrule% inserts single-line 
 Neg & + & + & - & -\\ % Entering row contents 
 Verbal & + & - & +& -\\[1ex] % [1ex] adds vertical space 
-\midrule% inserts single-line 
+\lspbottomrule% inserts single-line 
 \end{tabular} 
 \label{tab:burkholder:6}
 \end{table} 
@@ -768,12 +768,12 @@ Verbal & + & - & +& -\\[1ex] % [1ex] adds vertical space
 \caption{Realizations of Present Tense} %title of the table 
 \centering % centering table 
 \begin{tabular}{c| r|r|rr} % creating eight columns 
-\midrule%inserting double-line 
+\lsptoprule%inserting double-line 
  &\multicolumn{1}{c}{-i-}& \multicolumn{1}{|c|}{-a-}& \multicolumn{2}{|c}{$\emptyset$} \\ [0.5ex] 
 \midrule% inserts single-line 
 Neg & + & - & + & -\\ % Entering row contents 
 Verbal & + & + & -& -\\[1ex] % [1ex] adds vertical space 
-\midrule% inserts single-line 
+\lspbottomrule% inserts single-line 
 \end{tabular} 
 \label{tab:burkholder:7}
 \end{table} 
@@ -784,12 +784,12 @@ Verbal & + & + & -& -\\[1ex] % [1ex] adds vertical space
 \caption{Realizations of Future Tense} %title of the table 
 \centering % centering table 
 \begin{tabular}{c| rrrr} % creating eight columns 
-\midrule%inserting double-line 
+\lsptoprule%inserting double-line 
  &\multicolumn{4}{c}{-za-} \\ [0.5ex] 
 \midrule% inserts single-line 
 Neg & + & + & - & -\\ % Entering row contents 
 Verbal & + & - & +& -\\[1ex] % [1ex] adds vertical space 
-\midrule% inserts single-line 
+\lspbottomrule% inserts single-line 
 \end{tabular} 
 \label{tab:burkholder:8}
 \end{table} 
@@ -1025,48 +1025,38 @@ This paper is intended as a contribution to the field of Bantu linguistics and t
 
 This appendix shows the selectional properties of the various  syntactic constructions used in this paper.
 
-PolP: =TP, Pol
-\\
-ZP\textsubscript{+V}: =TP PRES +V, T 
-\\
-ZP\textsubscript{-V}: =TP PAST -V, T 
-\\
-TP\textsubscript{V}: =VP, T +V
-\\
-TP\textsubscript{Adj, Past}: =AP, T -V +Past
-\\
-TP\textsubscript{Adj, Present}: =BeP +Adj, T -V -Past
-\\
-Be: =AP, Be 
-\\
-TP\textsubscript{-Main}: =BeP -M, T -M
-\\
-BeP\textsubscript{-Main}: =PolP, Be -M
+\begin{multicols}{2}
+\begin{tabbing}
+TP\textsubscript{Adj, Present}: \= =BeP +Adj, T -V -Past\kill
+Be: \> =AP, Be\\
+BeP\textsubscript{-Main}: \> =PolP, Be -M\\
+PolP: \> =TP, Pol\\
+TP\textsubscript{Adj, Past}: \> =AP, T -V +Past\\
+TP\textsubscript{Adj, Present}: \> =BeP +Adj, T -V -Past\\
+TP\textsubscript{-Main}: \> =BeP -M, T -M\\
+TP\textsubscript{V}: \> =VP, T +V\\
+ZP\textsubscript{+V}: \> =TP PRES +V, T \\
+ZP\textsubscript{-V}: \> =TP PAST -V, T \\
 
+\end{tabbing}
+\end{multicols}
 
 \section*{Abbreviations}
+\begin{multicols}{2}
+\begin{tabbing}
+Numbers \= signify noun class (ie 1, 7)\kill
+\textsc{cop} \> copula\\
+\textsc{ep} \> epenthetic (vowel)\\
+\textsc{fut} \> future tense\\
+\textsc{fv} \> final vowel\\
+\textsc{neg} \> negation\\
+Numbers \> signify noun class (ie 1, 7)\\
+\textsc{prs} \> present tense\\
+\textsc{pst} \> past tense\\
+\textsc{sm} \> subject marker\\
+\end{tabbing}
+\end{multicols}
 
-\sc{neg} \quad negation
-\\
-Numbers \quad signify noun class (ie 1, 7)
-\\
-\sc{sm} \quad subject marker
-\\
-\sc{prs} \quad present tense
-\\
-\sc{cop} \quad copula
-\\
-\sc{pst} \quad past tense
-\\
-\sc{ep} \quad epenthetic (vowel)
-\\
-\sc{fut} \quad future tense
-\\
-\sc{fv} \quad final vowel
-
-
-
-\section*{Abbreviations}
 \section*{Acknowledgements}
 
 \printbibliography[heading=subbibliography,notkeyword=this]
