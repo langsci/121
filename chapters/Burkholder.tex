@@ -10,7 +10,7 @@
 \newcommand{\ka}[0]{\textit{-(k)a- }}
 \newcommand{\bee}[0]{\textit{be }}
 
-\abstract{
+\abstract{%
 This paper closely examines the structure of negation in Ndebele, a Bantu language spoken in Zimbabwe. The paper argues for the presence of a null verbal element which occurs in some types of Ndebele clauses. In addition the claim is made that the two pieces of Ndebele bipartite negation are realizations of two different nodes, a higher NegP node and a lower TP node which is sensitive to polarity. There are two primary pieces of evidence in favor of this hypothesis. The first is that adopting such a structure allows us to treat the negative prefix \nga and the negative suffix \textit{-anga-} as a single morpheme, contrary to current proposals (\citealt{Buell2004}; 2005; \citealt{Khumalo1981}; 1982; \citealt{Sibanda2004}). A second piece of evidence is that introducing a null verbal element where proposed provides an explanation for previously unaccounted for data in the realm of adjectival predicates.}
 
 \maketitle
@@ -191,10 +191,9 @@ In other Bantu studies, the morpheme \textit{-a} found in \REF{ex:burkholder:4a}
 
 \begin{exe}
 \ex\label{ex:burkholder:5} 
-\end{exe}
 \begin{tikzpicture}[
 sibling distance=6em,
-level distance=2em]
+level distance=2em,baseline]
 \node (root) at (0,0) {PolP}
 			child { node  {\textbf{a}} [sibling distance=8em, level distance=1em]
 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
@@ -211,7 +210,7 @@ level distance=2em]
 						child { node  {ngi-pheg}[sibling distance=8em, level distance=1em]
 							child { node (V){iVerb} [line width=.001mm]}}
 						child { node {}}}};
-%\draw (V) [->]to[out=280,in=270] (vt);
+%\draw[->] (V) to[out=280,in=270] (vt);
 %\draw[->, dashed] (pol) to[out=230,in=280] (c);
 
 %\draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
@@ -223,6 +222,7 @@ level distance=2em]
 %\draw[dashed] (t) to[out=250,in=280] (-2,-3);
 %\draw[dashed] (c) to[out=220,in=100] (-2,-3);
 \end{tikzpicture}
+\end{exe}
 
 
   
@@ -230,10 +230,7 @@ level distance=2em]
 
 \begin{exe}
 \ex\label{ex:burkholder:6} 
-\end{exe}
-\begin{tikzpicture}[
-sibling distance=6em,
-level distance=2em]
+\begin{tikzpicture}[sibling distance=6em,level distance=2em,baseline]
 \node (root) at (0,0) {PolP}
 			child { node  {\textbf{a}} [sibling distance=8em, level distance=1em]
 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
@@ -262,102 +259,75 @@ level distance=2em]
 %\draw[dashed] (t) to[out=250,in=280] (-2,-3);
 %\draw[dashed] (c) to[out=220,in=100] (-2,-3);
 \end{tikzpicture}
- 
+ \end{exe}
 
 
 \begin{exe}
 \ex\label{ex:burkholder:7}
-\end{exe}
-\todo[inline]{tree commented out due to compile problems}
-% \begin{tikzpicture}[
-% sibling distance=6em,
-% level distance=2em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {\textbf{a}} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {\st{uV}}
-% 						child { node {\st{uVerb}}
-% 							child { node (pol){\st{uT}}}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=5em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{ngi-pheg_i}} }
-% 					child { node {\textbf{i}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: +V}
-% 								child { node (t){\st{uPol}}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 						child { node {}}}};
+\todo[inline]{Please check the index \textsubscript{i} in this and all other examples!}
+\begin{tikzpicture}[baseline,sibling distance=6em,level distance=2em]
+\node (root) at (0,0) {PolP}
+			child { node  {\textbf{a}} [sibling distance=8em, level distance=1em]
+				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {\st{uV}}
+						child { node {\st{uVerb}}
+							child { node (pol){\st{uT}}}}}}}
+			child {node {TP}[sibling distance=8em, level distance=5em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{ngi-pheg\textsubscript{i}}} }
+					child { node {\textbf{i}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: +V}
+								child { node (t){\st{uPol}}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+						child { node {}}}};
 % \draw (V) [->]to[out=280,in=270] (vt);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% %\draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
-% %\draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
-% 
-% %\draw[<-, dashed] (V) to[out=250,in=280] (-2.5,-4.5);
-% %\draw[dashed] (pol) to[out=200,in=100] (-2.5,-4.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-2,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-2,-3);
-% \end{tikzpicture}
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
 
+%\draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
+%\draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
 
+%\draw[<-, dashed] (V) to[out=250,in=280] (-2.5,-4.5);
+%\draw[dashed] (pol) to[out=200,in=100] (-2.5,-4.5);
 
-
-
-
-
-
-
-
-
-
-
+%\draw[dashed] (t) to[out=250,in=280] (-2,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-2,-3);
+\end{tikzpicture}
+\end{exe}
 \begin{exe}
 \ex\label{ex:burkholder:8}
+\begin{tikzpicture}[baseline,sibling distance=6em,level distance=2em]
+\node (root) at (0,0) {PolP}
+			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
+				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uT}
+						child { node (pol){uV}}}}}
+			child {node {TP}[sibling distance=8em, level distance=5em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{ngi-pheg\textsubscript{i}}} }
+					child { node {\textbf{a}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: +V}
+								child { node (t){uPol}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+						child { node {}}}};
+%\draw (V) [->]to[out=280,in=270] (vt);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
+
+\draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
+
+%\draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
+%\draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
+
+%\draw[dashed] (t) to[out=250,in=280] (-2,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-2,-3);
+\end{tikzpicture}
 \end{exe}
-
-\todo{tree commented out due to compile problems}
-
-% \begin{tikzpicture}[
-% sibling distance=6em,
-% level distance=2em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uT}
-% 						child { node (pol){uV}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=5em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{ngi-pheg_i}} }
-% 					child { node {\textbf{a}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: +V}
-% 								child { node (t){uPol}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 						child { node {}}}};
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
-% 
-% %\draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
-% %\draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-2,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-2,-3);
-% \end{tikzpicture}
-
-
-
- 
-
-
-
 
 
 The reasoning for positing that final vowels are generated under tense is as follows. First, both positive and negative realizations of the final vowel contribute semantically to tense. Indeed, in examples such as \REF{ex:burkholder:4} they are the only overt markers of tense. Furthermore, the complementary distribution of final vowels and negative suffixes makes an argument which treats them as generated under separate nodes undesirable. The solution presented in this paper accounts for these facts by positing that final vowels and negative suffixes are both generated under a tense node which is sensitive to the polarity of the sentence as well as other clausal information (discussed further in \sectref{sec:burkholder:3}).
@@ -409,41 +379,38 @@ The sentences in \REF{ex:burkholder:9} are quite similar to the present tense se
 
 \begin{exe}
 \ex\label{ex:burkholder:10}
+\begin{tikzpicture}[baseline,sibling distance=6em,level distance=2em]
+\node (root) at (0,0) {PolP}
+			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
+				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uT}
+						child { node (pol){uV}}}}}
+			child {node {TP}[sibling distance=8em, level distance=5em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{ngi-khal\textsubscript{i}}} }
+					child { node {\textbf{e}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: +V}
+								child { node {uPol}
+									child { node (t){uVerb}}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+						child { node {}}}};
+%\draw (V) [->]to[out=280,in=270] (vt);
+\draw (V) [<-, dashed]to[out=280,in=270] (t);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
+
+\draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
+
+%\draw[<-, dashed] (V) to[out=250,in=280] (-2.25,-5.5);
+%\draw[dashed] (pol) to[out=200,in=100] (-2.25,-5.5);
+
+%\draw[dashed] (t) to[out=250,in=280] (-2,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-2,-3);
+\end{tikzpicture}
 \end{exe}
-\todo[inline]{Tree commented out due to compile problems}
-% \begin{tikzpicture}[
-% sibling distance=6em,
-% level distance=2em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uT}
-% 						child { node (pol){uV}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=5em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{ngi-khal_i}} }
-% 					child { node {\textbf{e}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: +V}
-% 								child { node {uPol}
-% 									child { node (t){uVerb}}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 						child { node {}}}};
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% \draw (V) [<-, dashed]to[out=280,in=270] (t);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
-% 
-% %\draw[<-, dashed] (V) to[out=250,in=280] (-2.25,-5.5);
-% %\draw[dashed] (pol) to[out=200,in=100] (-2.25,-5.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-2,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-2,-3);
-% \end{tikzpicture}
 
 
 
@@ -451,44 +418,39 @@ The sentences in \REF{ex:burkholder:9} are quite similar to the present tense se
 
 \begin{exe}
 \ex\label{ex:burkholder:11}
+\begin{tikzpicture}[sibling distance=6em,level distance=2em,baseline]
+\node (root) at (0,0) {PolP}
+			child { node  {a} [sibling distance=8em, level distance=1em]
+				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uT}
+						child { node {uV}
+							child { node (pol){uVerb}}}}}}
+			child {node {TP}[sibling distance=8em, level distance=5em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{ngi-khal\textsubscript{i}}} }
+					child { node {\textbf{a-nga}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: +V}
+								child { node {uPol}
+									child { node (t){uVerb}}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+						child { node {}}}};
+%\draw (V) [->]to[out=280,in=270] (vt);
+\draw (V) [<-, dashed]to[out=280,in=270] (t);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
+
+\draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
+
+\draw[<-, dashed] (V) to[out=250,in=280] (-2.25,-5.5);
+\draw[dashed] (pol) to[out=200,in=100] (-2.25,-5.5);
+
+%\draw[dashed] (t) to[out=250,in=280] (-2,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-2,-3);
+\end{tikzpicture}
 \end{exe}
-
-\todo[inline]{Tree commented out due to compile problems}
-
-% \begin{tikzpicture}[
-% sibling distance=6em,
-% level distance=2em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {a} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uT}
-% 						child { node {uV}
-% 							child { node (pol){uVerb}}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=5em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{ngi-khal_i}} }
-% 					child { node {\textbf{a-nga}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: +V}
-% 								child { node {uPol}
-% 									child { node (t){uVerb}}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 						child { node {}}}};
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% \draw (V) [<-, dashed]to[out=280,in=270] (t);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2.3, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2.3, -4);
-% 
-% \draw[<-, dashed] (V) to[out=250,in=280] (-2.25,-5.5);
-% \draw[dashed] (pol) to[out=200,in=100] (-2.25,-5.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-2,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-2,-3);
-% \end{tikzpicture}
 
 
 Lexical differences aside, the noteworthy difference from the present tense sentences discussed in \sectref{sec:burkholder:2.2} is the interaction between the verb and the negative past tense suffix \textit{-nga-}.\footnote{As mentioned for negative polarity, note that past tense TP also carries an uninterpretable uVerb feature where present tense does not. The reasons for this will be discussed in \sectref{sec:burkholder:3}.} Excluding the final vowel, all verbs in Ndebele end in consonants and maintain a CV syllable structure. Of the four morphemes generated under the tense node, only \nga begins with a consonant. The result of this is that while the other three tense realizations fit into a CV pattern, head movement of a consonant final verb to the consonant initial tense marker \nga would result in a CCV syllable. The result of this problem is that the default vowel \textit{a} is epenthesized between the end of the verb and the beginning of the tense morpheme (\tabref{tab:burkholder:5}).
@@ -565,10 +527,7 @@ Once inserted, the null verbal element undergoes regular V-T raising, solidifyin
 
 \begin{exe}
 \ex\label{ex:burkholder:14}
-\end{exe}
-\begin{tikzpicture}[
-sibling distance=6em,
-level distance=3em]
+\begin{tikzpicture}[baseline,sibling distance=6em,level distance=3em]
 \node (root) at (0,0) {PolP}
 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
 				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
@@ -594,151 +553,127 @@ level distance=3em]
 %\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
 %\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
 \end{tikzpicture}
+\end{exe}
+
 
 
 
 
 \begin{exe}
 \ex\label{ex:burkholder:15}
+\begin{tikzpicture}[sibling distance=6em,level distance=2em,baseline]
+\node (root) at (0,0) {PolP}
+			child { node  {\textbf{a}} [sibling distance=8em, level distance=1em]
+				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uV}
+						child { node {uT}
+							child { node (pol){uVerb}}}}}}
+			child {node {TP}[sibling distance=8em, level distance=5em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{si-$\emptyset$\textsubscript{i}}} }
+					child { node {$\emptyset$}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: -V}
+								child { node (t){uPol}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+						child { node {AP}
+							child { node {\textbf{si-hle}}}
+							child { node {}}}}};
+%\draw (V) [->]to[out=280,in=270] (vt);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
+
+\draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
+
+\draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
+\draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
+
+%\draw[dashed] (t) to[out=250,in=280] (-2,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-2,-3);
+\end{tikzpicture}
 \end{exe}
-
-\todo[inline]{Tree commented out due to compile problems}
-
-% \begin{tikzpicture}[
-% sibling distance=6em,
-% level distance=2em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {\textbf{a}} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uV}
-% 						child { node {uT}
-% 							child { node (pol){uVerb}}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=5em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{si-$\emptyset$_i}} }
-% 					child { node {$\emptyset$}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: -V}
-% 								child { node (t){uPol}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 						child { node {AP}
-% 							child { node {\textbf{si-hle}}}
-% 							child { node {}}}}};
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
-% 
-% \draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
-% \draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-2,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-2,-3);
-% \end{tikzpicture}
-
-
-
-
-
-
-
-
-
 
 \begin{exe}
 \ex\label{ex:burkholder:16}
+\begin{tikzpicture}[sibling distance=8em,level distance=3em,baseline]
+\node (root) at (0,0) {PolP}
+			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
+				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uV}
+							child { node (pol){uT}}}}}
+			child {node {TP}[sibling distance=8em, level distance=3em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {be\textsubscript{j}-\textbf{si-$\emptyset$\textsubscript{i}}} }
+					child { node {$\emptyset$}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: -V}
+								child { node {uVerb}
+									child { node (t){uPol}}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+				child { node {AuxP}
+					child { node {t\textsubscript{j}}}
+						child { node {AP}
+							child { node {\textbf{si-hle}}}
+							child { node {}}}}}};
+\draw (V) [<-, dashed]to[out=280,in=270] (t);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
+
+\draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
+
+%\draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
+%\draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
+
+%\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
+\end{tikzpicture}
 \end{exe}
-
-\todo[inline]{Tree commented out due to compile problems}
-
-% \begin{tikzpicture}[
-% sibling distance=8em,
-% level distance=3em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uV}
-% 							child { node (pol){uT}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=3em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {be_j-\textbf{si-$\emptyset$_i}} }
-% 					child { node {$\emptyset$}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: -V}
-% 								child { node {uVerb}
-% 									child { node (t){uPol}}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 				child { node {AuxP}
-% 					child { node {t_j}}
-% 						child { node {AP}
-% 							child { node {\textbf{si-hle}}}
-% 							child { node {}}}}}};
-% \draw (V) [<-, dashed]to[out=280,in=270] (t);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
-% 
-% %\draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
-% %\draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
-% \end{tikzpicture}
-
 
 
 
 
 \begin{exe}
 \ex\label{ex:burkholder:17}
+\begin{tikzpicture}[sibling distance=8em,level distance=3em,baseline]
+\node (root) at (0,0) {PolP}
+			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
+				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uV}
+						child { node {uVerb}
+							child { node (pol){uT}}}}}}
+			child {node {TP}[sibling distance=8em, level distance=3em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {be\textsubscript{j}-\textbf{si-$\emptyset$\textsubscript{i}}} }
+					child { node {\textbf{nga}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: -V}
+								child { node {uPol}
+									child { node (t) {uVerb}}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+				child { node {AuxP}
+					child { node {t\textsubscript{j}}}
+						child { node {AP}
+							child { node {\textbf{si-hle}}}
+							child { node {}}}}}};
+%\draw (V) [->]to[out=280,in=270] (vt);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
+
+\draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
+
+\draw[<-, dashed] (V) to[out=250,in=280] (-1,-6);
+\draw[dashed] (pol) to[out=250,in=100] (-1,-6);
+
+%\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
+\end{tikzpicture}
 \end{exe}
-
-\todo[inline]{Tree commented out due to compile problems}
-
-% \begin{tikzpicture}[
-% sibling distance=8em,
-% level distance=3em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uV}
-% 						child { node {uVerb}
-% 							child { node (pol){uT}}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=3em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {be_j-\textbf{si-$\emptyset$_i}} }
-% 					child { node {\textbf{nga}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: -V}
-% 								child { node {uPol}
-% 									child { node (t) {uVerb}}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 				child { node {AuxP}
-% 					child { node {t_j}}
-% 						child { node {AP}
-% 							child { node {\textbf{si-hle}}}
-% 							child { node {}}}}}};
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
-% 
-% \draw[<-, dashed] (V) to[out=250,in=280] (-1,-6);
-% \draw[dashed] (pol) to[out=250,in=100] (-1,-6);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
-% \end{tikzpicture}
-
 
 
 \subsubsection{Multiple subject marking}\label{sec:burkholder:3.2.1}
@@ -883,94 +818,86 @@ The difference between future tense adjectival predicates and their counterparts
 
 \begin{exe}
 \ex\label{ex:burkholder:25}
-\end{exe}
-\todo[inline]{tree commented out due to compile problems}
-% \begin{tikzpicture}[
-% sibling distance=6em,
-% level distance=3em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uV}
-% 							child { node (pol){uT}}}}}
-% 				child { node {ZP}
-% 					child { node {si-za}}
-% 			child {node {TP}[sibling distance=8em, level distance=3em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{be_j-si-$\emptyset$_i}} }
-% 					child { node {$\emptyset$}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: -V}
-% 								child { node {uVerb}
-% 									child { node (t){uPol}}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 			child { node {AuxP}
-% 				child { node {t_j}}
-% 						child { node {AP}
-% 							child { node {\textbf{si-hle}}}
-% 							child { node {}}}}}}};
-% \draw (V) [<-, dashed]to[out=280,in=270] (t);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
-% 
-% %\draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
-% %\draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
-% \end{tikzpicture}
+\begin{tikzpicture}[sibling distance=6em,level distance=3em,baseline]
+\node (root) at (0,0) {PolP}
+			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
+				child { node {iPol:-neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uV}
+							child { node (pol){uT}}}}}
+				child { node {ZP}
+					child { node {si-za}}
+			child {node {TP}[sibling distance=8em, level distance=3em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{be\textsubscript{j}-si-$\emptyset$\textsubscript{i}}} }
+					child { node {$\emptyset$}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: -V}
+								child { node {uVerb}
+									child { node (t){uPol}}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+			child { node {AuxP}
+				child { node {t\textsubscript{j}}}
+						child { node {AP}
+							child { node {\textbf{si-hle}}}
+							child { node {}}}}}}};
+\draw (V) [<-, dashed]to[out=280,in=270] (t);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
 
+\draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
+
+%\draw[<-, dashed] (V) to[out=250,in=280] (-1.5,-4.5);
+%\draw[dashed] (pol) to[out=250,in=100] (-1.5,-4.5);
+
+%\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
+\end{tikzpicture}
+\end{exe}
 
 
 
 \begin{exe}
 \ex\label{ex:burkholder:26}
-\end{exe}
-\todo[inline]{Tree commented out due to compile problems}
-% \begin{tikzpicture}[
-% sibling distance=8em,
-% level distance=3em]
-% \node (root) at (0,0) {PolP}
-% 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uV}
-% 						child { node {uVerb}
-% 							child { node (pol){uT}}}}}}
-% 				child { node {ZP}
-% 					child { node {si-za}}
-% 			child {node {TP}[sibling distance=8em, level distance=3em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{be_j-si-$\emptyset$_i}} }
-% 					child { node {\textbf{nga}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: -V}
-% 								child { node {uPol}
-% 									child { node (t) {uVerb}}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iVerb} [line width=.001mm]}}
-% 			child { node {AuxP}
-% 				child { node {t_j}}
-% 						child { node {AP}
-% 							child { node {\textbf{si-hle}}}
-% 							child { node {}}}}}}};
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
-% \draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
-% 
-% \draw[<-, dashed] (V) to[out=250,in=280] (-1,-6);
-% \draw[dashed] (pol) to[out=250,in=100] (-1,-6);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
-% \end{tikzpicture}
+\begin{tikzpicture}[sibling distance=8em,level distance=3em,baseline]
+\node (root) at (0,0) {PolP}
+			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
+				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uV}
+						child { node {uVerb}
+							child { node (pol){uT}}}}}}
+				child { node {ZP}
+					child { node {si-za}}
+			child {node {TP}[sibling distance=8em, level distance=3em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{be\textsubscript{j}-si-$\emptyset$\textsubscript{i}}} }
+					child { node {\textbf{nga}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:+past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: -V}
+								child { node {uPol}
+									child { node (t) {uVerb}}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iVerb} [line width=.001mm]}}
+			child { node {AuxP}
+				child { node {t\textsubscript{j}}}
+						child { node {AP}
+							child { node {\textbf{si-hle}}}
+							child { node {}}}}}}};
+%\draw (V) [->]to[out=280,in=270] (vt);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
 
+\draw[<-, dashed] (t) to[out=230,in=280] (-2, -4);
+\draw[<-,dashed] (pol) to[out=230,in=100] (-2, -4);
+
+\draw[<-, dashed] (V) to[out=250,in=280] (-1,-6);
+\draw[dashed] (pol) to[out=250,in=100] (-1,-6);
+
+%\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
+\end{tikzpicture}
+\end{exe}
 
 
 
@@ -1023,66 +950,63 @@ Aside from these distributional concerns, the form of the negative imperatives a
 
 \begin{exe}
 \ex\label{ex:burkholder:29}
+\begin{tikzpicture}[sibling distance=6em,level distance=3em,baseline]
+\node (root) at (0,0) {PolP}[sibling distance=10em, level distance=3em]
+			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
+				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
+					child { node {uV}
+						child { node {uVerb}
+							child { node (pol){uT}}}}}}
+			child {node {TP}[sibling distance=8em, level distance=3em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{u-$\emptyset$\textsubscript{i}}} }
+					child { node {\textbf{nga}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node { iV: -V}
+									child { node (t) {uPol}}}}}}
+				child { node {VP}[sibling distance=6em, level distance=3em] 
+						child { node  {t\textsubscript{i}}[sibling distance=8em, level distance=1em]
+							child { node (V){iV} [line width=.001mm]}}
+						child { node {TP}[sibling distance=8em, level distance=4em] 
+				child { node {T}[sibling distance=4em, level distance=2em] 
+					child { node (vt) {\textbf{$\emptyset$-hamb\textsubscript{j}}} }
+					child { node {\textbf{i}}  [ sibling distance=8em, level distance=1em]
+						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
+							child { node {iV: +V}
+									child { node (t2) {uPol}}}}}}
+				child { node {VP}[sibling distance=4em, level distance=2em] 
+						child { node  {t\textsubscript{j}}[sibling distance=8em, level distance=1em]
+							child { node (V2){iV} [line width=.001mm]}}
+						child { node {}}}}}};
+%\draw (V) [->]to[out=280,in=270] (vt);
+%\draw[->, dashed] (pol) to[out=230,in=280] (c);
+
+\draw[<->, dashed] (t) to[out=230,in=280] (pol);
+\draw[<-,dashed] (pol) to[out=230,in=280] (t2);
+
+\draw[<-, dashed] (V) to[out=250,in=280] (-2,-4.5);
+\draw[dashed] (pol) to[out=250,in=100] (-2,-4.5);
+
+%\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
+%\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
+
+%second clause
+
+%\draw (V) [->]to[out=280,in=270] (vt);
+%\draw[->, dashed] (pol2) to[out=230,in=280] (c2);
+
+%\draw[->, dashed] (t2) to[out=230,in=280] (pol);
+%\draw[<-,dashed] (pol) to[out=230,in=100] (3, -8.7);
+
+%\draw[<-, dashed] (V2) to[out=250,in=280] (-1.5,-4.5);
+%\draw[dashed] (pol2) to[out=250,in=100] (-1.5,-4.5);
+
+%\draw[dashed] (t2) to[out=250,in=280] (3.6,-8.8);
+%\draw[dashed] (c2) to[out=220,in=100] (3.6,-8.8);
+
+
+\end{tikzpicture}
 \end{exe}
-\todo[inline]{tree commented out due to compile problems}
-% \begin{tikzpicture}[
-% sibling distance=6em,
-% level distance=3em]
-% \node (root) at (0,0) {PolP}[sibling distance=10em, level distance=3em]
-% 			child { node  {$\emptyset$} [sibling distance=8em, level distance=1em]
-% 				child { node {iPol:+neg} [line width=.001mm, sibling distance=8em, level distance=1em]
-% 					child { node {uV}
-% 						child { node {uVerb}
-% 							child { node (pol){uT}}}}}}
-% 			child {node {TP}[sibling distance=8em, level distance=3em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{u-$\emptyset$_i}} }
-% 					child { node {\textbf{nga}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node { iV: -V}
-% 									child { node (t) {uPol}}}}}}
-% 				child { node {VP}[sibling distance=6em, level distance=3em] 
-% 						child { node  {t_i}[sibling distance=8em, level distance=1em]
-% 							child { node (V){iV} [line width=.001mm]}}
-% 						child { node {TP}[sibling distance=8em, level distance=4em] 
-% 				child { node {T}[sibling distance=4em, level distance=2em] 
-% 					child { node (vt) {\textbf{$\emptyset$-hamb_j}} }
-% 					child { node {\textbf{i}}  [ sibling distance=8em, level distance=1em]
-% 						child { node {iT:-past}  [line width=.001mm, sibling distance=8em, level distance=1em]
-% 							child { node {iV: +V}
-% 									child { node (t2) {uPol}}}}}}
-% 				child { node {VP}[sibling distance=4em, level distance=2em] 
-% 						child { node  {t_j}[sibling distance=8em, level distance=1em]
-% 							child { node (V2){iV} [line width=.001mm]}}
-% 						child { node {}}}}}};
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% %\draw[->, dashed] (pol) to[out=230,in=280] (c);
-% 
-% \draw[<->, dashed] (t) to[out=230,in=280] (pol);
-% \draw[<-,dashed] (pol) to[out=230,in=280] (t2);
-% 
-% \draw[<-, dashed] (V) to[out=250,in=280] (-2,-4.5);
-% \draw[dashed] (pol) to[out=250,in=100] (-2,-4.5);
-% 
-% %\draw[dashed] (t) to[out=250,in=280] (-1.5,-3);
-% %\draw[dashed] (c) to[out=220,in=100] (-1.5,-3);
-% 
-% %second clause
-% 
-% %\draw (V) [->]to[out=280,in=270] (vt);
-% %\draw[->, dashed] (pol2) to[out=230,in=280] (c2);
-% 
-% %\draw[->, dashed] (t2) to[out=230,in=280] (pol);
-% %\draw[<-,dashed] (pol) to[out=230,in=100] (3, -8.7);
-% 
-% %\draw[<-, dashed] (V2) to[out=250,in=280] (-1.5,-4.5);
-% %\draw[dashed] (pol2) to[out=250,in=100] (-1.5,-4.5);
-% 
-% %\draw[dashed] (t2) to[out=250,in=280] (3.6,-8.8);
-% %\draw[dashed] (c2) to[out=220,in=100] (3.6,-8.8);
-% 
-% 
-% \end{tikzpicture}
 
 The motivation for such an analysis seems to be primarily lacking in the case of imperatives. Throughout this paper it has been the tense node  (or the tense auxiliary) which has selected for a null verbal element. In the case of imperative sentences like the one above, it is unclear what would motivate the tense node to select for a null verbal element, bringing imperatives in line with the rest of our analysis. Thus it is unclear whether imperative sentences should be analyzed under the same rubric as the other examples in this paper, or whether they are better described as a separate phenomenon.
 
