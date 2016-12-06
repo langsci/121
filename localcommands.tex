@@ -120,3 +120,10 @@
 \makeatother
 
 \newcommand{\biberror}[1]{{\color{red}#1}}
+
+\newcolumntype{S}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{Q}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{Z}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}

@@ -55,8 +55,7 @@ Dyirbal
 Edoid
 Egyptian
 Ekoti
-Emakhuwa
-English
+Emakhuwa 
 Ewe
 Falor  
 Fante  
