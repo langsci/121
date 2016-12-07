@@ -278,15 +278,16 @@ As a first step, we must account for the variation observed in the bilingual det
 \ea\label{ex:ihemere:14}
 \begin{forest} baseline
      [XP
-	[Spec[X\textsuperscript{0}]]    [Xˈ[YP]]]
+	[Spec,name=Spec]    [Xˈ[X\textsuperscript{0}][YP]]]
 \end{forest}
 \z
 
 \ea\label{ex:ihemere:15}
 \begin{forest} baseline
 	 [FP
-		 [Spec[F]]    [Fˈ[NP]]
+		 [Spec]    [Fˈ[F][NP,name=NP]]
      ]
+\draw[->,dashed] (NP.south) -- ++(0,-.5\baselineskip) -| (Spec.south);     
 \end{forest}
 \z 
 \todo{draw trees for examples 14-17, including move-arrow for 15}
@@ -294,25 +295,21 @@ As a first step, we must account for the variation observed in the bilingual det
 If so, then the bilingual determinate DPs discussed earlier could be analyzed as having the structure in \REF{ex:ihemere:15}. The structure in \REF{ex:ihemere:15} says that the bilingual determinate DPs are headed by a functional head that takes an NP as C. The NP complement moves to the Spec position in surface syntax giving rise to the C-H order. For instance, the mixed DP \textit{hospital}\textbf{\textit{}} \textit{ahü} in \REF{ex:ihemere:11} will have the structure in \REF{ex:ihemere:16} below.
 
 \ea\label{ex:ihemere:16} 
-	    DP                                                  
-
-  Spec       Dˈ                                                 
-
-      D    NP                                                   
- 
-
-         \textbf{hospital}            ahü     t\textsubscript{i}
+\begin{forest} baseline
+	[DP
+	[Spec[\textbf{hospital},tier=word]][Dˈ                                                 
+		[D[ahü,tier=word]][NP[t\textsubscript{i},tier=word]]]]                                                   
+\end{forest}
 \z
 \todo{draw trees for these two examples}
-\ea\label{ex:ihemere:17}    DP
+\ea\label{ex:ihemere:17} 
 
-       Spec      Dˈ
-
-      D    NP
-
-
-    \textbf{exam}    Ø    t\textsubscript{i}
-
+\begin{forest} baseline
+	[DP
+		[Spec[\textbf{exam},tier=word]]
+		[Dˈ[D[Ø,tier=word]][NP[ t\textsubscript{i}, tier=word]]]
+	]
+\end{forest}
 \z
 
 In \REF{ex:ihemere:16}, the N ‘hospital’ is shown to move into its surface position where it appears before the demonstrative D \textit{ahü} ‘that’; thus, creating two possibilities: first, the N head could move to the head of the functional category in a head to head movement; or second, the NP could move to the Spec position of the functional projection (FP). Given that there is no agreement morphology between the N and the associated functional category in Igbo, we assume the latter for the bilingual determinate DPs as illustrated in \REF{ex:ihemere:15} and \REF{ex:ihemere:16}. Consequently, to maximize structural symmetry between determinate and indeterminate nominals, we shall assume that the latter are DPs headed by a following null determiner in line with Igbo grammar. If our supposition about the determinate DPs is correct, then the bare EL form in \REF{ex:ihemere:8} will have the structure in \REF{ex:ihemere:17}. Bare nominals can be interpreted as definite, indefinite or generic, which are features associated with the functional category D \citep{Radford2004}. Therefore, we conclude that in languages like Igbo where there are bare nominals, there is a related null D head which carries the D-features. Moreover, the same analysis can be applied to account for the variation observed in all the mixed nominal expressions presented in this study. 
