@@ -89,7 +89,7 @@
 \renewcommand{\sc}{\scshape}
 \renewcommand{\rm}{\upshape}
 
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{0}
 
 %%% Commands for glosses
 \newcommand{\EXP}{\textsc{exp}}
@@ -108,10 +108,10 @@
  
 
 
-\newcommand{\longrule}{\rule{1em}{.3pt}}
+% \newcommand{\longrule}{\rule{1em}{.3pt}}
 
 \newcommand{\dummyslash}{\hphantom{/}}
-\newcommand{\shadecell}{\cellcolor{black!20!white}}
+% \newcommand{\shadecell}{\cellcolor{black!20!white}}
 
 
 
@@ -127,3 +127,8 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{Z}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+ \settocfeature[toc]{raggedhook}{\raggedright} 
+ 
+\newcommand{\chapterDOI}\ChapterDOI
+

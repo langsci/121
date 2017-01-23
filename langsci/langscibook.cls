@@ -116,6 +116,7 @@
 
 \newif\iflsDraft \lsDraftfalse
 \newif\iflsOpenReview \lsOpenReviewfalse
+\newif\iflsUndecapitalize \lsUndecapitalizefalse
 \newif\iflsShowIndex \lsShowIndexfalse
 \newif\iflsBiblatex \lsBiblatextrue
 \newif\iflsCollection \lsCollectionfalse
@@ -171,6 +172,8 @@
 % 	\renewcommand{\lsOutput}{long}}
 \DeclareVoidOption{smallfont}{  			
 	\renewcommand{\lsFontsize}{10pt}}
+\DeclareVoidOption{undecapitalize}{  			
+	\lsUndecapitalizetrue }	
 \DeclareVoidOption{draftmode}{	% 'draftmode' instead of 'draft' due to undesirable side efects	
 	 \lsDrafttrue
 	 \overfullrule=5pt	}	% to indicate overfull hboxes
@@ -231,6 +234,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage{morewrites} %more helper files to write to
 \usepackage{etex}
 \reserveinserts{18}
 \usepackage{xstring}	 
@@ -317,9 +321,10 @@
 }
 
 % Generates the content of the back cover
-\newcommand{\podbackcover}{
-    \node [font=\fontsize{25pt}{10mm}\selectfont, right, below right = 16.5mm and 7.5mm of lspcls_bg2.north west, text width=11.5cm] (lspcls_backtitle) {\color{\lsCoverFontColour}\lsBackTitleFont{\raggedright\lsBackTitle\par}};
-  \node [below = 10mm of lspcls_backtitle, text width=11.5cm, align=justify] {\color{\lsCoverFontColour}\lsBackBodyFont{\parindent=15pt\lsBackBody}};
+% Argument 1: Text width, corresponding to Argument 1 of \podfrontcovertoptext
+\newcommand{\podbackcover}[1]{
+  \node [font=\fontsize{25pt}{10mm}\selectfont, right, below right = 10mm and 7.5mm of lspcls_bg2.north west, text width=#1] (lspcls_backtitle) {\color{\lsCoverFontColour}\lsBackTitleFont{\raggedright\lsBackTitle\par}};
+  \node [below = 10mm of lspcls_backtitle, text width=#1, align=justify] {\color{\lsCoverFontColour}\lsBackBodyFont{\parindent=15pt\lsBackBody}};
   %\node [below right = 192.5mm and 97.5mm of lspcls_bg2.north west] {\color{\lsCoverFontColour}ISBN \lsBackBodyFont{\lsISBN}};
   \node [below right = 192.5mm and 97.5mm of lspcls_bg2.north west, text width=4cm] {
     \colorbox{white}{
@@ -501,7 +506,7 @@
     \podfrontcovertoptext{137mm}{51pt} % Due to different cover sizes, the text size was adjusted so that the difference in line breaks would be minimal between hard and softcover books. 
     \podcoverbottomtext
     \newcommand{\lsISBNcover}{\lsISBNhardcover}
-    \podbackcover  
+    \podbackcover{135.5mm}  
   \end{tikzpicture}  
   %exit the document right here
   \end{titlepage}
@@ -525,7 +530,7 @@
 %     \path let \p1 = (lspcls_square.north east), \p2 = (lspcls_covertitle.west) in node at (\x2,\y1) (lspcls_seriesinfo) [font=\fontsize{17pt}{7.5mm}\selectfont, right, text width=95mm, anchor=north west] {\color{\lsCoverFontColour}\lsCoverSeriesFont{\lsSeriesTitle\par}};
 %     %-----------------------------
 	\iflsUscover\newcommand{\lsISBNcover}{\lsISBNsoftcoverus}\else\newcommand{\lsISBNcover}{\lsISBNsoftcover}\fi
-    \podbackcover
+    \podbackcover{137mm}
   \end{tikzpicture} 
   %exit the document right here  
   \end{titlepage}
@@ -758,8 +763,8 @@
 \newcommand{\lsDedicationFont}{\fontsize{15pt}{10mm}\selectfont}
 \newcommand{\lsBackTitleFont}{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{25pt}{10mm}\selectfont}
 \newcommand{\lsBackBodyFont}{\lsInsideFont}
-\newcommand{\lsSpineAuthorFont}{\fontsize{16pt}{14pt}\selectfont}
-\newcommand{\lsSpineTitleFont}{\sffamily\fontsize{18pt}{14pt}\selectfont}
+\newcommand{\lsSpineAuthorFont}{\bfseries\fontsize{16pt}{14pt}\selectfont}
+\newcommand{\lsSpineTitleFont}{\sffamily\bfseries\fontsize{18pt}{14pt}\selectfont}
 
 \setkomafont{sectioning}{\normalcolor\bfseries}
 
@@ -791,7 +796,7 @@
     \renewcommand{\newlineCover}{}
     \renewcommand{\newlineSpine}{}  
     \renewcommand{\lsEditorPrefix}{{\Large Edited by\\}}
-    \renewcommand{\lsEditorSuffix}{(ed.)}
+    \renewcommand{\lsEditorSuffix}{(eds.)}
     \IfSubStr{\@author}{Press}   % if \@author contains \&
       %case true
       {\renewcommand{\lsEditorSuffix}{(eds.)}}
@@ -837,7 +842,23 @@
       }
       }
      \end{textblock}
-  \fi}
+  \fi
+  \iflsUndecapitalize 
+    \begin{textblock}{170}(-20,75)
+      \rotatebox{30}{
+      \colorbox{red}{
+      \parbox[c][15ex][c]{220mm}{\centering\lsCoverTitleFont\color{white}Undecapitalized\\[-0.1ex]}
+      % \begin{tabular}{c}
+      %   ~\\
+      %   \scalebox{6}{\color{red}Open Review}\\[-0.5ex]
+      %   ~%version of \today, \currenttime
+      % \end{tabular}
+      }
+      }
+     \end{textblock}
+  \fi
+  
+  }
 
 \newcommand{\lsCoverTitleAuthor}{
   \renewcommand{\and}{\\}
@@ -997,7 +1018,7 @@
   \renewcommand{\newlineCover}{}
   \renewcommand{\newlineSpine}{}
   {\@author}\if\lsEditorSuffix\empty\else\ \lsEditorSuffix\fi. %
-  {\the\year}. %
+  {2016}. %
   \textit{\@title}\if\@subtitle\empty\else: \textit{\@subtitle}\fi\ %
   (\lsSeriesTitle). %
   Berlin: Language Science Press.
@@ -1013,7 +1034,7 @@
 This title can be downloaded at:\\
 \url{\lsURL}
 
-© \the\year, \iflsCollection the authors\else\@author\fi
+© 2016, \iflsCollection the authors\else\@author\fi
 
 \newcommand{\ccby}{CC-BY} 
 \ifx\lsCopyright\ccby 
@@ -1028,7 +1049,7 @@ http://creativecommons.org/licenses/by-nd/4.0/
 ISBN: & \lsISBNdigital~(Digital) \\
       & \lsISBNhardcover~(Hardcover)\\
       & \lsISBNsoftcover~(Softcover)\\
-      & \lsISBNsoftcoverus~(Softcover US)\\
+%       & \lsISBNsoftcoverus~(Softcover US)\\
 \end{tabular}
 
 \IfStrEq{\lsISSN}{??}   % \IfStrEq from xstring
@@ -1242,52 +1263,33 @@ is, or will remain, accurate or appropriate.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\usepackage[
+	natbib=true,
+	\iflsUndecapitalize
+	style=\bstpath biblatex-langsci-unified-undecap,
+	\else
+	style=\bstpath biblatex-langsci-unified,
+	\fi
+	citestyle=\bstpath langsci-authoryear-comp,
+	%refsection=chapter,
+	maxbibnames=99,
+	isbn=false,
+	doi=false,
+	url=false,
+	eprint=false,
+	backend=\lsBiblatexBackend,
+	indexing=cite,
+	\iflsCollection\else
+		toc=bib 		% make bibliography appear in toc
+	\fi
+	]{biblatex} 
+\renewcommand{\postnotedelim}{: }%
+\renewcommand{\multicitedelim}{\addsemicolon\space}%  
+\renewcommand{\compcitedelim}{\multicitedelim}
+\DeclareFieldFormat{postnote}{#1}%
+%\renewcommand{\nameyeardelim}{ }%
+\defbibheading{references}{\chapter{References}} 
  
-\iflsBiblatex	% BibLaTeX
-	\usepackage[
-		natbib=true,
-		style=\bstpath biblatex-langsci-unified,
-		citestyle=\bstpath langsci-authoryear-comp,
-		%refsection=chapter,
-		maxbibnames=99,
-		isbn=false,
-		doi=false,
-		url=false,
-		eprint=false,
-		backend=\lsBiblatexBackend,
-		indexing=cite,
-		\iflsCollection\else
-			toc=bib 		% make bibliography appear in toc
-		\fi
-		]{biblatex}
-	\renewcommand{\postnotedelim}{: }%
-	\renewcommand{\multicitedelim}{\addsemicolon\space}%  
-	\renewcommand{\compcitedelim}{\multicitedelim}
-	\DeclareFieldFormat{postnote}{#1}%
-	%\renewcommand{\nameyeardelim}{ }%
-  \defbibheading{references}{\chapter{References}} 
-\else	%BibTeX (deprecated)
-	\usepackage{natbib}
-	\setlength{\bibsep}{0mm}
-	%% unified style sheet for linguistics journals
-	%% http://celxj.org/downloads/unified.bst
-	\bibliographystyle{./langsci/bst/unified} 
-	%% This does not work ...
-	% \setcitestyle{
-	% notesep={: }, % 2002: 125
-	% aysep={~}     % Gazdar 2002
-	% }
-
-	%% check what the unified people have to say on this.
-	\bibpunct[: ]{(}{)}{;}{a}{}{,}
-	%% They do not say anything about citations in the running text.
-	%% As was sown in \citew{Meier2002} -> As was shown in Meier (2002), ...
-	%% This is what De Gruyter does:
-	\let\citew=\citet
-	%% This is what Stefan did:
-	%\let\citew=\citealt
-\fi
-
 \let\cite=\citet 	% in order to prevent inconsistencies between \cite and \citet
 
 %% penalties against widows and orphans in bibliography
@@ -1300,6 +1302,10 @@ is, or will remain, accurate or appropriate.
 }
 {}{}
 
+% % temporary workaround to fix wrong wrapping for \verb in bibtex
+% \makeatletter
+% \def\blx@maxline{77}
+% \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1336,6 +1342,18 @@ is, or will remain, accurate or appropriate.
     %% N.B.: floatpagefraction MUST be less than topfraction !!
 \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
+\usepackage{setspace}
+\usepackage{caption}
+% \captionsetup{labelfont=bf} 
+\captionsetup{%
+font={%
+stretch=.8%
+,small%
+},%
+width=.8\textwidth
+}
+
+\setcapindent{0pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %    Appendices:
@@ -1417,7 +1435,9 @@ is, or will remain, accurate or appropriate.
 
 %% \index inside footnote
 \def\infn#1#2{%
-	\hyperpage{#2}n#1%
+% 	\hyperpage{#2}n#1%  99n2
+% 	\hyperpage{#2}*%   99*
+	\hyperpage{#2}\textsuperscript{#1}%  99²
 }%
 \newcommand{\footnoteindex}[2]{\index{#2|infn{#1}}}
 \newcommand{\footnoteindex@sbj}[2]{\index[sbj]{#2|infn{#1}}}
@@ -1616,7 +1636,7 @@ is, or will remain, accurate or appropriate.
 
 	%% write bib entry to file
 	%% FIXME: the publisher field needs a final period, since this is not provided by \fullciteFooter together with DOIs.
-	\immediate\write\tempfile{@incollection{#1,author={\authorTemp},title={{\@title}},booktitle={{\lsCollectionTitle}},editor={\editorTemp},publisher={Language Science Press.},Address={Berlin},year=\the\year,pages={\lsCollectionPaperFirstPage --\lsCollectionPaperLastPage},doi={\lsChapterDOI},options={skipbib=true}}}
+	\immediate\write\tempfile{@incollection{#1,author={\authorTemp},title={{\@title}},booktitle={{\lsCollectionTitle}},editor={\editorTemp},publisher={Language Science Press.},Address={Berlin},year=2016,pages={\lsCollectionPaperFirstPage --\lsCollectionPaperLastPage},doi={\lsChapterDOI},options={skipbib=true}}}
  
 	\end{refsection}
 	\end{collectionpaper}}
@@ -1655,9 +1675,14 @@ is, or will remain, accurate or appropriate.
 \newcommand{\lsCollectionPaperTitle}{{%
   \renewcommand{\newlineTOC}{}
   \renewcommand{\newlineCover}{\\}
-  \iflsCollectionChapter
-%     \vspace*{-2\baselineskip} 
-    {\LARGE Chapter \thechapter}\newline\newline\fi
+
+
+
+\iflsCollectionChapter   
+  % \\[-1\baselineskip]
+  \noindent{\LARGE Chapter \thechapter}\\
+  \medskip 
+\fi 
   \@title}}
   
 \newcommand{\lsCollectionPaperAuthor}{{%
@@ -1708,14 +1733,14 @@ is, or will remain, accurate or appropriate.
 
 %writeout page numbers for separation of chapters 
 
-\usepackage{newfile}
-\newoutputstream{pages}
-\openoutputfile{\jobname.pgs}{pages}
-\newcommand{\writechapterpages}{\addtostream{pages}{\thepage}}
-
-\AtEndDocument{
- \closeoutputstream{pages}
-}
+% \usepackage{newfile}
+% \newoutputstream{pages}
+% \openoutputfile{\jobname.pgs}{pages}
+% \newcommand{\writechapterpages}{\addtostream{pages}{\thepage}}
+% 
+% \AtEndDocument{
+%  \closeoutputstream{pages}
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %

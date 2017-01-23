@@ -5,18 +5,16 @@
 %%%         follow the instructions below        %%%
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-% Everything following a % is ignored
-% Some lines start with %. Remove the % to include them
- 
-\documentclass[output=short         
+  
+\documentclass[output=book         
 	        %,blackandwhite
 	        ,collection  
 	        ,collectionchapter
-	        ,collectiontoclongg
+% 	        ,collectiontoclongg
 % 		,draft,draftmode
  	        ,modfonts,nonflat  
-% 		,smallfont
+		,smallfont
+% 		,colorlinks
 		  ]{langsci/langscibook}                               %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,10 +40,8 @@
 \frontmatter
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
-\tableofcontents
-% %% uncomment if you have preface and/or acknowledgements
-\include{chapters/preface}
-% % \include{chapters/acknowledgments}
+\tableofcontents 
+\include{chapters/preface} 
 
 \mainmatter          
 
@@ -60,49 +56,52 @@
 
 \part{(Possible) Niger-Congo}
 \subpart{Mande}
- \includepaper{chapters/McPherson}
+% \todo{attend to biberrors}
+% % \todo{subject index}
 % 
- \subpart{Gur}
- \includepaper{chapters/Cahill}
- \includepaper{chapters/Teo}
- \includepaper{chapters/Pacchiarotti} %
- \includepaper{chapters/Schwarz} %
-% 
- \subpart{Kwa}
- \includepaper{chapters/Korsah} %
- \includepaper{chapters/Osam} %
-% 
- \subpart{Edoid}
- \includepaper{chapters/RolleKari} %
-% 
- \subpart{Bantu}
- \includepaper{chapters/GlewweAly} %
- \includepaper{chapters/Kawasha} %
- \includepaper{chapters/Sarvasy} %
- \includepaper{chapters/Landman} %
- \includepaper{chapters/Burkholder}
- \includepaper{chapters/NgonyaniNgowa}
- \includepaper{chapters/GluckmanBowler}
- \includepaper{chapters/Jerro}
- \includepaper{chapters/Sibanda}%
- \includepaper{chapters/NgunaEtAl}%
- \includepaper{chapters/vanderWalNamyalo}%
- \includepaper{chapters/Nicolle} %
-%  
- \part{(Possible) Nilo-Saharan}
- \includepaper{chapters/Moodie}%
- \includepaper{chapters/AhlandC}%
-% 
- \part{Afro-Asiatic}
- \includepaper{chapters/Nilsson}%
- \includepaper{chapters/AhlandM}%
-% 
- \part{Cross-family studies}
-% ------------
- \includepaper{chapters/SafirSelvanathan}% 
- \includepaper{chapters/Anderson} 
- \includepaper{chapters/Ihemere}%
- \includepaper{chapters/MuakaMichieka} %
+\includepaper{chapters/McPherson}%1 proofs typeset 
+          
+\subpart{Gur}
+\includepaper{chapters/Cahill}%2  proofs typeset 
+\includepaper{chapters/Teo}%3 proofs typeset 
+\includepaper{chapters/Pacchiarotti} %4 proofs typeset 
+\includepaper{chapters/Schwarz} %5 proofs typeset 
+
+\subpart{Kwa}
+\includepaper{chapters/Korsah} %6 proofs typeset 
+\includepaper{chapters/Osam} %7  proofs typeset 
+ 
+
+\subpart{Edoid}
+\includepaper{chapters/RolleKari} %8 proofs typeset 
+
+\subpart{Bantu}
+\includepaper{chapters/GlewweAly} %9 proofs typeset 
+\includepaper{chapters/Kawasha} %10 proofs typeset 
+\includepaper{chapters/Sarvasy} %11 proofs typeset 
+\includepaper{chapters/Landman} %12 %proofs typeset 
+\includepaper{chapters/Burkholder}%13 %proofs typeset 
+\includepaper{chapters/NgonyaniNgowa}%14 proofs typeset 
+\includepaper{chapters/GluckmanBowler}%15 proofs typeset 
+\includepaper{chapters/Jerro}%16  proofs typeset 
+\includepaper{chapters/Sibanda}%17   proofs typeset
+\includepaper{chapters/NgunaEtAl}%18   proofs typeset
+\includepaper{chapters/vanderWalNamyalo}%19   proofs typeset
+\includepaper{chapters/Nicolle} %20   proofs typeset
+ 
+\part{(Possible) Nilo-Saharan}
+\includepaper{chapters/Moodie}%21 
+\includepaper{chapters/AhlandC}%22 proofs typeset 
+
+\part{Afro-Asiatic}
+\includepaper{chapters/Nilsson}%23 proofs 
+\includepaper{chapters/AhlandM}%24 
+
+\part{Cross-family studies} 
+\includepaper{chapters/SafirSelvanathan}% 25 proofs typeset 
+\includepaper{chapters/Anderson} %26 proofs typeset 
+\includepaper{chapters/Ihemere}%27 
+\includepaper{chapters/MuakaMichieka} %28 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,7 +110,7 @@
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\input{localseealso.tex} 
-% There is normally no need to change the backmatter section
+\input{localseealso.tex}  
+\sloppy
 \input{backmatter.tex}
 \end{document} 

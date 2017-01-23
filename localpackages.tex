@@ -5,7 +5,7 @@
 \usepackage{multicol}
 \usepackage{lipsum}
 \usepackage{longtable}
-\usepackage{todonotes}
+% \usepackage{todonotes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                                              %%%
 %%%           Examples                           %%%
@@ -59,13 +59,14 @@
 % \numberwithin{chapter}{subpart}
 \renewcommand{\thesubpart}{\thepart-\Alph{subpart}}
 \newcommand{\subpartname}{Subpart}
-\titleformat{\subpart}[display]{\normalfont\Large\bfseries}%
-{\subpartname~\thesubpart~}{1pc}{\Huge\bfseries}
+
+\titleformat{\subpart}[display]{\vspace*{6cm}\centering\normalfont\Large\bfseries}%
+{\subpartname~\thesubpart~}{1pc}{\LARGE\bfseries}
 \titlespacing{\subpart}{0pt}{0pt}{0pt}
 
 \titlecontents{subpart}[0pt]{\addvspace{1pc}\normalfont\bfseries}%
-{\thecontentslabel\enspace ---\enspace\large}%
-{\normalfont\large\bfseries}{\hspace{2em plus 1fill}\large\contentspage}
+{\thecontentslabel\enspace ---\enspace}%
+{\normalfont\bfseries}{\hspace{2em plus 1fill}\contentspage}
  
  
  
@@ -73,3 +74,6 @@
 \usepackage{multirow}
 \usepackage{rotating}
 \usepackage{langsci/styles/langsci-gb4e} 
+
+% \usepackage[disable]{todonotes}
+\usepackage{todonotes}

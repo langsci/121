@@ -23,11 +23,19 @@ main1-blx.bbl:  $(SOURCE) localbibliography.bib
 	bash bibtexvolume.sh
 
 
-main.snd: main1-blx.bbl
-	sed -i s/.*\\emph.*// main.adx #remove titles which biblatex puts into the name index
+main.snd: complete	
+	xelatex main 
+	sed -i s/.*\\emph.*// main.adx #remove titles which biblatex puts into the name 
+	sed -i 's/Cahill.*1667em../Cahill/' main.adx
+	sed -i s/.*\\Churchill.*// main.adx #remove Churchill show
+	sed -i s/.*\\CSC.*// main.adx  
+	sed -i s/.*\\Methodist.*// main.adx  
+	sed -i s/.*\\TUKI.*// main.adx   
+	sed -i s/.*\\Society.*// main.adx  
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.sdx # ordering of references to footnotes
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.adx
 	sed -i 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' main.ldx
+	sed -i 's/Ju|hyperindexformat{.’hoan}}/Juǀ’hoan|hyperpage}/' main.ldx
 	python3 fixindex.py
 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx
@@ -81,6 +89,17 @@ openreview: openreview.pdf
 openreview.pdf: main.pdf
 	pdftk main.pdf multistamp orstamp.pdf output openreview.pdf 
 
+paperhive: 
+	git branch gh-pages
+	git checkout gh-pages
+	git add proofreading.pdf versions.json
+	git commit -m 'prepare for proofreading' proofreading.pdf versions.json
+	git push origin gh-pages
+	git checkout master 
+	echo "langsci.github.io/BOOKID"
+	firefox https://paperhive.org/documents/new
+	
+	
 proofreading: proofreading.pdf
 	
 
